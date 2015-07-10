@@ -1,0 +1,150 @@
+@import url('http://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300');
+
+@font-face{
+	font-family: 'StinkontheDeath';
+	src: url(http://alohayamauchi.com/fonts/StinkontheDeath.ttf);
+}
+
+html {
+	background-color:#1B1B1B;
+	width: 100%;
+	height: 100%;
+}
+
+
+body {
+	margin: 0 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'Gloria Hallelujah', cursive;
+	color: #0197F0;
+}
+
+ul {
+	position: relative;
+	text-align: center;
+	margin: 0 0 -20px 0;
+}
+
+li {
+	color: #FFFFFF;
+	font-size: 25px;
+	display: inline;
+	margin: 0 20px 0 20px;
+}
+
+h1 { 
+	font-family: 'StinkontheDeath';
+	color: #FFFFFF;
+	font-size:200px;
+	font-style: normal;
+	font-weight: 100;
+	text-align: center;
+	margin: 15px 0 0 0;
+	padding: 200px 0 10px 0;
+}
+
+h2 {
+	font-size: 1.25em;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Open Sans Condensed', italic;
+	font-weight: 300italic;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+strong {
+	font-weight: 700;
+}
+
+nav {
+	box-shadow: 0px 10px 10px black;
+	background: -webkit-linear-gradient(#0197F0, #0A1C27); /* For Safari 5.1 to 6.0 */
+ 	background: -o-linear-gradient(#0197F0, #0A1C27); /* For Opera 11.1 to 12.0 */
+ 	background: -moz-linear-gradient(#0197F0, #0A1C27); /* For Firefox 3.6 to 15 */
+ 	background: linear-gradient(#0197F0, #0A1C27); /* Standard syntax */
+}
+
+.myself-pic {
+	position: relative;
+	float: left;
+	width: 8em;
+	border-radius: 5em;
+	margin-right: 1em;
+}
+
+
+.jumbotron {
+	margin: 0 0 0 0;
+	position: relative;
+	background-image: url(http://alohayamauchi.com/images/bg/Lanikai-Sunrise-bg.png);
+	background-position:center;
+	background-size: 100%;
+	height: 94%;
+	width: 100%;
+}
+
+.jumbotron-title {
+	text-shadow: 3px 3px 8px #000000;
+}
+
+.jumbotron-subhead {
+	color: #009AF6;
+	font-size: 50px;
+	text-align: center;
+	margin: -50px 0 0 0;
+}
+
+.about-me-name {
+	text-align: center;
+}
+
+/*.content-bg {
+	background-color: #1e1f1f;
+	
+	position: relative;
+	height: 150em;
+	width: 100%;
+}*/
+
+.content {
+	background-image: url(http://alohayamauchi.com/images/bg/3px-tile.png);
+	margin: 0 1.5em;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 1.6em;
+	height: 100%;
+}
+
+.content-italic {
+	font-style: italic;
+}
+
+.content-date {
+	float: right;
+}
+
+.skill-software {
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.education {
+	border-bottom: 1px solid #FFFFFF;
+}
+
+footer {
+	position: static;
+	bottom: 0;
+	color: #FFFFFF;
+	background: #144C7A;
+	text-align: center;
+	margin: 0 0 0 0;
+}
