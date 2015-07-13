@@ -1,6 +1,7 @@
 @import url('http://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300');
 
+@charset 'UTF-8';
 @font-face{
 	font-family: 'StinkontheDeath';
 	src: url(http://alohayamauchi.com/fonts/StinkontheDeath.ttf);
@@ -34,16 +35,6 @@ li {
 	margin: 0 20px 0 20px;
 }
 
-h1 { 
-	font-family: 'StinkontheDeath';
-	color: #FFFFFF;
-	font-size:200px;
-	font-style: normal;
-	font-weight: 100;
-	text-align: center;
-	margin: 15px 0 0 0;
-	padding: 200px 0 10px 0;
-}
 
 h2 {
 	font-size: 1.25em;
@@ -85,35 +76,37 @@ nav {
 .jumbotron {
 	margin: 0 0 0 0;
 	position: relative;
-	background-image: url(http://alohayamauchi.com/images/bg/Lanikai-Sunrise-bg.png);
-	background-position:center;
-	background-size: 100%;
+	top: 0.5em;
 	height: 94%;
+	width: 100%;
+	text-align: center;
+}
+
+.jumbotron img {
+	height: 41.75em;
 	width: 100%;
 }
 
 .jumbotron-title {
+	position: absolute;
+	bottom: -50px;
+	right: 50px;
 	text-shadow: 3px 3px 8px #000000;
+	z-index: 1;
 }
 
-.jumbotron-subhead {
-	color: #009AF6;
-	font-size: 50px;
+.jumbotron-title h1 { 
+	font-family: 'StinkontheDeath';
+	color: #FFFFFF;
+	font-size:120px;
+	font-style: normal;
+	font-weight: 100;
 	text-align: center;
-	margin: -50px 0 0 0;
 }
 
 .about-me-name {
 	text-align: center;
 }
-
-/*.content-bg {
-	background-color: #1e1f1f;
-	
-	position: relative;
-	height: 150em;
-	width: 100%;
-}*/
 
 .content {
 	background-image: url(http://alohayamauchi.com/images/bg/3px-tile.png);
