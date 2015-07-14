@@ -1,5 +1,6 @@
 @import url('http://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,700,300');
+@import url('http://fonts.googleapis.com/css?family=Jura:400,300');
 
 @charset 'UTF-8';
 @font-face{
@@ -18,23 +19,9 @@ body {
 	margin: 0 0;
 	width: 100%;
 	height: 100%;
-	font-family: 'Gloria Hallelujah', cursive;
+	/*font-family: 'Jura', sans-serif;*/
 	color: #0197F0;
 }
-
-ul {
-	position: relative;
-	text-align: center;
-	margin: 0 0 -20px 0;
-}
-
-li {
-	color: #FFFFFF;
-	font-size: 25px;
-	display: inline;
-	margin: 0 20px 0 20px;
-}
-
 
 h2 {
 	font-size: 1.25em;
@@ -57,11 +44,25 @@ strong {
 }
 
 nav {
+	padding: 0.1em 0;
+	font-family: 'Jura', sans-serif;
 	box-shadow: 0px 10px 10px black;
 	background: -webkit-linear-gradient(#0197F0, #0A1C27); /* For Safari 5.1 to 6.0 */
  	background: -o-linear-gradient(#0197F0, #0A1C27); /* For Opera 11.1 to 12.0 */
  	background: -moz-linear-gradient(#0197F0, #0A1C27); /* For Firefox 3.6 to 15 */
  	background: linear-gradient(#0197F0, #0A1C27); /* Standard syntax */
+}
+
+nav ul {
+	position: relative;
+	text-align: center;
+}
+
+nav ul li {
+	color: #FFFFFF;
+	font-size: 25px;
+	display: inline;
+	margin: 0 20px 0 20px;
 }
 
 .myself-pic {
@@ -76,7 +77,6 @@ nav {
 .jumbotron {
 	margin: 0 0 0 0;
 	position: relative;
-	top: 0.5em;
 	height: 94%;
 	width: 100%;
 	text-align: center;
