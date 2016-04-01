@@ -8,18 +8,29 @@
 	src: url(http://alohayamauchi.com/fonts/StinkontheDeath.ttf);
 }
 
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 html {
-	background-color:#1B1B1B;
+	background-image: url("http://alohayamauchi.com/images/background/triangles-pattern.jpg");
+    background-repeat: repeat;
+    margin: 0 auto;
+    max-width: auto;
 	width: 100%;
 	height: 100%;
 }
 
-
 body {
 	margin: 0 0;
-	width: 100%;
-	height: 100%;
-	/*font-family: 'Jura', sans-serif;*/
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
 	color: #0197F0;
 }
 
@@ -44,6 +55,7 @@ strong {
 }
 
 nav {
+	z-index: 1;
 	padding: 0.1em 0;
 	font-family: 'Jura', sans-serif;
 	box-shadow: 0px 10px 10px black;
@@ -65,6 +77,11 @@ nav ul li {
 	margin: 0 20px 0 20px;
 }
 
+section {
+	font-size: 1.5em;
+	margin: 1em;
+}
+
 .myself-pic {
 	position: relative;
 	float: left;
@@ -75,21 +92,22 @@ nav ul li {
 
 
 .jumbotron {
+	position: absolute;
+	z-index: -1;
 	margin: 0 0 0 0;
 	position: relative;
-	height: 94%;
 	width: 100%;
 	text-align: center;
 }
 
-.jumbotron img {
-	height: 41.75em;
+/*.jumbotron img {
+	height: 40em;
 	width: 100%;
-}
+}*/
 
 .jumbotron-title {
 	position: absolute;
-	bottom: -50px;
+	/*bottom: -50px;*/
 	right: 50px;
 	text-shadow: 3px 3px 8px #000000;
 	z-index: 1;
@@ -104,12 +122,47 @@ nav ul li {
 	text-align: center;
 }
 
+.jumbotron1 {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+}
+
+.jumbotron2 {
+	top: -500px;
+	left: -100px;
+	display: block;
+	width: 100%;
+	position: absolute;
+	z-index: -2;
+	-webkit-animation:spin 15s linear infinite;
+    -moz-animation:spin 10s linear infinite;
+    animation:spin 200s linear infinite;           /* W3C compliant browsers */
+    -webkit-transform-origin: 70% 70%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
 .about-me-name {
 	text-align: center;
 }
 
+.img-holder {
+	height: 300px;
+	width: 100%;
+	position: relative;
+}
+
+.content-bg {
+	position: relative;
+	height: 2100px;
+	/*background-image: url(http://alohayamauchi.com/images/bg/3px-tile.png);*/
+
+}
+
 .content {
-	background-image: url(http://alohayamauchi.com/images/bg/3px-tile.png);
+	position: absolute;
 	margin: 0 1.5em;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 300;
@@ -133,11 +186,26 @@ nav ul li {
 	border-bottom: 1px solid #FFFFFF;
 }
 
+.parallaxParent {
+		height: 100vh;
+		overflow: hidden;
+}
+
+.parallaxParent > * {
+		height: 200%;
+		position: relative;
+		top: -100%;
+}
+
 footer {
-	position: static;
+	position: relative;
 	bottom: 0;
 	color: #FFFFFF;
 	background: #144C7A;
 	text-align: center;
 	margin: 0 0 0 0;
 }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
