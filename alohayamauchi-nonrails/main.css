@@ -28,6 +28,7 @@ html {
 }
 
 body {
+
 	margin: 0 0;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 300;
@@ -86,6 +87,10 @@ nav li a {
 }
 nav li a:hover {
    text-decoration: underline;   
+}
+
+main {
+	height: 100%;
 }
 
 section {
@@ -165,20 +170,13 @@ section {
 	position: relative;
 }
 
-.content-bg {
-	position: relative;
-	height: 2100px;
-	/*background-image: url(http://alohayamauchi.com/images/bg/3px-tile.png);*/
-
-}
 
 .content {
-	position: absolute;
 	margin: 0 1.5em;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 300;
 	font-size: 1.6em;
-	height: 100%;
+
 }
 
 .content-italic {
@@ -190,11 +188,15 @@ section {
 }
 
 .skill-software {
-	border-bottom: 1px solid #FFFFFF;
+	border-bottom: 1px solid #004763;
+}
+
+.certificates {
+	border-bottom: 1px solid #004763;
 }
 
 .education {
-	border-bottom: 1px solid #FFFFFF;
+	border-bottom: 1px solid #004763;
 }
 
 .parallaxParent {
@@ -209,7 +211,7 @@ section {
 }
 
 footer {
-	position: relative;
+/*	position: absolute;*/
 	bottom: 0;
 	color: #FFFFFF;
 	background: #004763;
