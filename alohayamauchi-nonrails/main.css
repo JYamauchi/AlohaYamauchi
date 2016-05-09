@@ -8,6 +8,7 @@
 	src: url(http://alohayamauchi.com/fonts/StinkontheDeath.ttf);
 }
 
+
 * {
 	box-sizing: border-box;
 }
@@ -31,7 +32,7 @@ body {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 300;
 	font-size: 1em;
-	color: #0197F0;
+	color: #004763;
 }
 
 h2 {
@@ -41,11 +42,11 @@ h2 {
 
 h3 {
 	font-family: 'Open Sans Condensed', italic;
-	font-weight: 300italic;
+	font-weight: 300, italic;
 }
 
 a {
-	color: #FFFFFF;
+	color: #004763;
 	text-decoration: none;
 }
 
@@ -54,27 +55,37 @@ strong {
 	font-weight: 700;
 }
 
+header {
+	background: #004763;
+}
+
+
 nav {
-	z-index: 1;
-	padding: 0.1em 0;
-	font-family: 'Jura', sans-serif;
-	box-shadow: 0px 10px 10px black;
-	background: -webkit-linear-gradient(#0197F0, #0A1C27); /* For Safari 5.1 to 6.0 */
- 	background: -o-linear-gradient(#0197F0, #0A1C27); /* For Opera 11.1 to 12.0 */
- 	background: -moz-linear-gradient(#0197F0, #0A1C27); /* For Firefox 3.6 to 15 */
- 	background: linear-gradient(#0197F0, #0A1C27); /* Standard syntax */
+   padding: 5px;
+   text-align: center;
+   box-shadow: 0px 5px 10px black;
 }
 
 nav ul {
-	position: relative;
-	text-align: center;
+   margin: 0;
+   padding: 0;    
 }
-
-nav ul li {
-	color: #FFFFFF;
-	font-size: 25px;
+nav li {
+	letter-spacing: 2px;
+	font-size: 1.5em;
+	float: initial;
 	display: inline;
-	margin: 0 20px 0 20px;
+	padding: 0.1em 0.8em;
+	margin: 0 10px 0 0;
+	color: #FFFFFF;
+	list-style-type: none;
+}
+nav li a {
+   color: #FFFFFF;  
+   text-decoration: none;    
+}
+nav li a:hover {
+   text-decoration: underline;   
 }
 
 section {
@@ -201,7 +212,7 @@ footer {
 	position: relative;
 	bottom: 0;
 	color: #FFFFFF;
-	background: #144C7A;
+	background: #004763;
 	text-align: center;
 	margin: 0 0 0 0;
 }

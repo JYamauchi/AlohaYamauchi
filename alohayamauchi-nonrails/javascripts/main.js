@@ -1,5 +1,39 @@
 $(document).ready(function () {
 
+  //For Navigation Menu
+  var nav = $('header');
+  var navLi = $('nav li');
+  var navHomey = nav.offset().top;
+  var isFixed = false; 
+  var $w = $(window);
+  // nav.style.transition = "opacity 1s";
+
+  $w.scroll(function() {
+
+    var scrollTop = $w.scrollTop();
+    var shouldBeFixed = scrollTop > navHomey;
+    if (shouldBeFixed && !isFixed) {
+      nav.css({
+        position: 'fixed',
+        top: 0,
+        left: nav.offset().left,
+        width: nav.width(),
+        zIndex: 2
+      });
+      // nav.fadeTo("slow", 0.5 );
+      isFixed = true; 
+    }
+
+    else if (!shouldBeFixed && isFixed)
+    {
+      nav.css({
+        position: 'static',
+        opacity: 1
+      });
+      isFixed = false;
+    }
+  });
+
   // init controller
   var controller = new ScrollMagic.Controller({
       globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}
@@ -24,13 +58,13 @@ $(document).ready(function () {
   });
 
 
-  // create a scene
-  // new ScrollMagic.Scene({
-  //       duration: 100,    // the scene should last for a scroll distance of 100px
-  //       offset: 50        // start this scene after scrolling for 50px
-  //   })
-  //   .setPin("#body") // pins the element for the the scene's duration
-  //   .addTo(controller); // assign the scene to the controller
+  //create a scene
+  new ScrollMagic.Scene({
+        duration: 100,    // the scene should last for a scroll distance of 100px
+        offset: 50        // start this scene after scrolling for 50px
+    })
+    .setPin("#body") // pins the element for the the scene's duration
+    .addTo(controller); // assign the scene to the controller
   
   // $('.jumbotron').slick({
   //   dots: true,
@@ -42,22 +76,5 @@ $(document).ready(function () {
   //   slidesToShow: 1,
   //   slidesToScroll: 1
   // });
-
-  // new ScrollMagic.Scene({triggerElement: "#parallax1"})
-  //         .setTween("#parallax1 > div", {y: "80%", ease: Linear.easeNone})
-  //         .addIndicators()
-  //         .addTo(controller);
-
-  // new ScrollMagic.Scene({triggerElement: "#parallax2"})
-  //         .setTween("#parallax2 > div", {y: "80%", ease: Linear.easeNone})
-  //         .addIndicators()
-  //         .addTo(controller);
-
-  // new ScrollMagic.Scene({triggerElement: "#parallax3"})
-  //         .setTween("#parallax3 > div", {y: "80%", ease: Linear.easeNone})
-  //         .addIndicators()
-  //         .addTo(controller);
-
-
   
 });
