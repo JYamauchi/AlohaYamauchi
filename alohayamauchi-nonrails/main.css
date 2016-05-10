@@ -36,6 +36,15 @@ body {
 	color: #004763;
 }
 
+h1, h2, h3, h4 {
+	margin-top: 0; 
+	margin-bottom: 0.5em;
+}
+
+h1 {
+	text-align: center;
+}
+
 h2 {
 	font-size: 1.25em;
 	text-align: center;
@@ -98,15 +107,6 @@ section {
 	margin: 1em;
 }
 
-.myself-pic {
-	position: relative;
-	float: left;
-	width: 8em;
-	border-radius: 5em;
-	margin-right: 1em;
-}
-
-
 .jumbotron {
 	position: absolute;
 	z-index: -1;
@@ -160,8 +160,39 @@ section {
 	transform-origin: 50% 50%;
 }
 
+.about-me {
+	height: 600px;
+	border-bottom: 1px solid #004763;
+	background: #E8E8E8;
+	width: 100%;
+}
+
+.myself-pic {
+	position: relative;
+	width: 8em;
+	border-radius: 5em;
+	display: block;
+	margin: 0 auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
 .about-me-name {
 	text-align: center;
+}
+
+.about-me-description {
+	position: relative;
+	float: left;
+	width: 450px;
+	font-size: 20px;
+	margin-left: 50px;
+}
+
+.about-me-detail {
+	position: relative;
+	float: right;
+	width: 450px;
 }
 
 .img-holder {
@@ -170,7 +201,6 @@ section {
 	position: relative;
 }
 
-
 .content {
 	margin: 0 1.5em;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -178,6 +208,7 @@ section {
 	font-size: 1.6em;
 
 }
+
 
 .content-italic {
 	font-style: italic;
@@ -211,7 +242,6 @@ section {
 }
 
 footer {
-/*	position: absolute;*/
 	bottom: 0;
 	color: #FFFFFF;
 	background: #004763;
