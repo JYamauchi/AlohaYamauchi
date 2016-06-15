@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+
+
   $('#fullpage').fullpage({
     //Navigation
         menu: '#menu',
@@ -131,6 +133,7 @@ $(document).ready(function () {
     .setPin("#body") // pins the element for the the scene's duration
     .addTo(controller); // assign the scene to the controller
   
+
   // $('.jumbotron').slick({
   //   dots: true,
   //   infinite: true,
@@ -143,20 +146,12 @@ $(document).ready(function () {
   // });
 
   //Horizontal Scrolling Effect
-  $(function() {
-  $('ul.nav a').bind('click',function(event){
-    var $anchor = $(this);
-    /*
-    if you want to use one of the easing effects:
-    $('html, body').stop().animate({
-      scrollLeft: $($anchor.attr('href')).offset().left
-    }, 1500,'easeInOutExpo');
-     */
-    $('html, body').stop().animate({
-      scrollLeft: $($anchor.attr('href')).offset().left
-    }, 1000);
-    event.preventDefault();
-  });
 });
-  
+
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    pauseOnAction: true,
+    pauseOnHover: true    
+  });
 });
