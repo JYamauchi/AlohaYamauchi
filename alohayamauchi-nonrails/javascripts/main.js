@@ -149,6 +149,28 @@ $(document).ready(function () {
 });
 
 $(window).load(function() {
+
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: true,
+    directionNav: false,
+    multipleKeyboard: true,
+    animationLoop: true,
+    slideshow: false,
+    sync: "#carousel"
+  });
+
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: true,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider',
+    move: 1
+  });
+
   $('.flexslider').flexslider({
     animation: "slide",
     pauseOnAction: true,
