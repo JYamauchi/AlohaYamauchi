@@ -1,52 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-            
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">  
+            <!-- Webite Title -->
         <title>Aloha Yamauchi</title>
-
-        <!-- CSS Content -->
+            <!-- CSS Content -->
         <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
         <link rel="stylesheet" type="text/css" href="bower_components/pagePiling.js/jquery.pagepiling.css" />
-        <link rel="stylesheet" type="text/css" href="bower_components/flexslider/flexslider.css"/>
-        <link rel="stylesheet" type="text/css" href="main.css">
-
-        <!-- Javascript or Jquery Content -->
-        <script type="text/javascript" src="javascripts/jquery-2.2.3.min.js"></script>
-        <script type="text/javascript" src="javascripts/jquery.easing.1.3.js"></script>
-        <script src="bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
-        <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
-        <script type="text/javascript" src="bower_components/pagePiling.js/jquery.pagepiling.js"></script>
-        <script type="text/javascript" src="node_modules/parallax-imagescroll/jquery.imageScroll.js"></script>
-        <script type="text/javascript" src="javascripts/smoothscroll.js"></script>
-        <script type="text/javascript" src="bower_components/flexslider/jquery.flexslider.js"></script>
-
-        <!-- Main Javascript -->
-        <script type="text/javascript" src="javascripts/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css"/>
+            <!-- My CSS File -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
-
-    <body>
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="#home" class='smoothScroll'>RESUME</a></li>
-                        <li><a href='#about-me' class='smoothScroll'>ABOUT ME</a></li>
-                        <li>PORTFOLIO</li>
-                        <li>BLOGS</li>
-                        <li><a href= "#contact">CONTACT ME</a></li>
-                    </ul>
-                </nav>
-            </header>
-        <div class="flexslider">
-  <ul class="slides">
-    <li>
-      <h1>Bye Jared</h1>
-    </li>
-    <li>
-      <h1>Hello Jared</h1>
-    </li>
-  </ul>
-</div>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class='smoothScroll'>RESUME</a></li>
+                <li><a href='#about-me' class='smoothScroll'>ABOUT ME</a></li>
+                <li>PORTFOLIO</li>
+                <li>BLOGS</li>
+                <li><a href= "#contact">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider-nav">
+    <div>Slide 1</div>
+    <div>Slide 2</div>
+    <div>Slide 3</div>
+    <div>Slide 4</div>
+    </div>
+    <div class="slider-front">
+        <div class='slide'><a href="#"></a><img src="https://s3-us-west-1.amazonaws.com/hawaii-com-wp/wp-content/uploads/2015/08/24125942/Hilton-Hawaiian-Village-1024x589.jpg"></div>
+        <div class='slide'><a href="#"></a><img src="http://www.astonhotels.com/assets/slides/690x380-Hawaii-Sunset.jpg"></div>
+        <div class='slide'><a href="#"></a><img src="https://s3-us-west-1.amazonaws.com/hawaii-com-wp/wp-content/uploads/2015/08/25114140/royalKona_gallery051.jpg"></div>
+        <div class='slide'><a href="#"></a><img src="http://www.hawaiimagazine.com/sites/default/files/field/image/St.Regis_.jpg"></div>
+    </div>
 
         <div id='fullpage'>
             <div class="section">
@@ -185,8 +174,17 @@
             </div>
             <footer>
                 Copyright © Jared Yamauchi 2015
-            </footer>
-        </div>
+        </footer>
+    </div>
         <!-- </div> -->
-    </body>
+        <!-- Javascript or Jquery Content -->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery-migrate-3.0.0.js"></script>
+    <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script type="text/javascript" src="node_modules/parallax-imagescroll/jquery.imageScroll.js"></script>
+    <script type="text/javascript" src="javascripts/smoothscroll.js"></script>
+        <!-- Main Javascript -->
+    <script type="text/javascript" src="javascripts/main.js"></script>
+</body>
 </html>

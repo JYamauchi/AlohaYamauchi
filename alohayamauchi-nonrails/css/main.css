@@ -9,7 +9,6 @@
 	src: url(http://alohayamauchi.com/fonts/StinkontheDeath.ttf);
 }
 
-
 * {
 	box-sizing: border-box;
 }
@@ -29,12 +28,18 @@ html {
 }
 
 body {
-
 	margin: 0 0;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 0.75em;
 	color: #004763;
+}
+
+nav {
+	padding: auto;
+	height: 40px;
+	text-align: center;
+	box-shadow: 0px 5px 10px black;
 }
 
 h1, h2, h3, h4 {
@@ -43,8 +48,8 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-	text-align: center;
-	font-size: 5em;
+	font-size: 2em;
+	color: white;
 }
 
 h2 {
@@ -55,7 +60,7 @@ h2 {
 h3 {
 	font-family: 'Open Sans Condensed', italic;
 	font-weight: 300, italic;
-	font-size: 0.9em;
+	font-size: 2em;
 }
 
 h4 {
@@ -74,13 +79,6 @@ strong {
 
 header {
 	background: #004763;
-}
-
-
-nav {
-   padding: 5px;
-   text-align: center;
-   box-shadow: 0px 5px 10px black;
 }
 
 nav ul {
@@ -207,9 +205,10 @@ section {
 }
 
 .img-holder {
-	height: 300px;
+	height: 500px;
 	width: 100%;
 	position: relative;
+  -webkit-transform: translateZ(0);
 }
 
 .content {
@@ -252,12 +251,128 @@ section {
 		top: -100%;
 }
 
+.vs-section {
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover;
+}
+
+.vs-section h2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 4rem;
+  margin: auto;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.vs-section:nth-of-type(1) { background-image: url('https://unsplash.it/1920/1276?image=703'); }
+.vs-section:nth-of-type(2) { background-image: url('https://unsplash.it/1920/1276?image=603'); }
+.vs-section:nth-of-type(3) { background-image: url('https://unsplash.it/1920/1276?image=503'); }
+.vs-section:nth-of-type(4) { background-image: url('https://unsplash.it/1920/1276?image=403'); }
+.vs-section:nth-of-type(5) { background-image: url('https://unsplash.it/1920/1276?image=203'); }
+
+.vs-vertical-nav {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  right: 3%;
+  bottom: auto;
+  display: block;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.vs-vertical-nav a {
+  display: block;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  white-space: nowrap;
+  text-indent: 100%;
+  background: url('../images/cd-icon-arrow.svg') no-repeat center center;
+}
+
+.vs-vertical-nav a.vs-prev {
+  margin-bottom: 10px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+
+.slick-slide {
+	outline: none;
+}
+
+.slick-slide h1 {
+		font-size: 2em;
+		color: red;
+	cursor: pointer;
+		-webkit-transition: all .7s ease;
+}
+
+.slick-slide h1::before {
+	font-size: 4em;
+	color: white;
+
+}
+
+.slick-center h1 {
+	 content:'';
+	font-size: 4em;
+	color: yellow;
+	-webkit-transition: all .7s ease;
+}
+
+.slick-center::after h1 {
+	color: white;
+	font-size: 2em
+    -webkit-transition: all .7s ease;
+}
+
+
+/*.slick-active h1:hover {
+	font-size: 4em;
+	color: blue;
+	-webkit-transition: all .7s ease;
+}*/
+
 footer {
 	bottom: 0;
 	color: #FFFFFF;
 	background: #004763;
 	text-align: center;
 	margin: 0 0 0 0;
+}
+
+@-webkit-keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
