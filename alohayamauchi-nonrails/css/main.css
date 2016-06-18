@@ -36,8 +36,8 @@ body {
 }
 
 nav {
-	padding: auto;
-	height: 40px;
+	padding: 2em;
+	height: 8em;
 	text-align: center;
 	box-shadow: 0px 5px 10px black;
 }
@@ -113,60 +113,6 @@ section {
 	margin: 1em;
 }
 
-
-.jumbotron {
-	position: absolute;
-	z-index: -1;
-	margin: 0 0 0 0;
-	position: relative;
-	width: 100%;
-	text-align: center;
-}
-
-/*.jumbotron img {
-	height: 40em;
-	width: 100%;
-}*/
-
-.jumbotron-title {
-	position: absolute;
-	/*bottom: -50px;*/
-	right: 50px;
-	text-shadow: 3px 3px 8px #000000;
-	z-index: 1;
-}
-
-.jumbotron-title h1 { 
-	font-family: 'StinkontheDeath';
-	color: #FFFFFF;
-	font-size:120px;
-	font-style: normal;
-	font-weight: 100;
-	text-align: center;
-}
-
-.jumbotron1 {
-	position: relative;
-	z-index: 1;
-	width: 100%;
-}
-
-.jumbotron2 {
-	top: -500px;
-	left: -100px;
-	display: block;
-	width: 100%;
-	position: absolute;
-	z-index: -2;
-	-webkit-animation:spin 15s linear infinite;
-    -moz-animation:spin 10s linear infinite;
-    animation:spin 200s linear infinite;           /* W3C compliant browsers */
-    -webkit-transform-origin: 70% 70%;
-	-moz-transform-origin: 50% 50%;
-	-o-transform-origin: 50% 50%;
-	transform-origin: 50% 50%;
-}
-
 .about-me {
 	height: 400px;
 	border-bottom: 1px solid #004763;
@@ -182,7 +128,6 @@ section {
 	text-align: center;
 	margin-top: 2em;
 	margin-bottom: 2em;
-
 }
 
 .about-me-name {
@@ -216,9 +161,7 @@ section {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 300;
 	font-size: 1.6em;
-
 }
-
 
 .content-italic {
 	font-style: italic;
@@ -274,6 +217,22 @@ section {
   font-weight: 300;
   line-height: 4rem;
   text-align: center;
+}
+
+.vs-section section {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 
+	0;
+	left: 0;
+	display: block;
+	height: 10em;
+	margin: auto;
+	font-size: 4rem;
+	font-weight: 300;
+	line-height: 4rem;
+	text-align: center;
 }
 
 .vs-section:nth-of-type(1) { background-image: url('https://unsplash.it/1920/1276?image=703'); }

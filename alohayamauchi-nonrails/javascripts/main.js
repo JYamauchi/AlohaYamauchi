@@ -14,28 +14,7 @@ $(document).ready(function () {
     // slidesToScroll: 1,
     asNavFor: '.slider-main',
     focusOnSelect: true,
-    responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '20px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '20px',
-        slidesToShow: 1
-      }
-    }
-  ]
   });
-
 
   $('#fullpage').fullpage({
     //Navigation
@@ -101,35 +80,31 @@ $(document).ready(function () {
   var navHomey = nav.offset().top;
   var isFixed = false; 
   var $w = $(window);
-  // nav.style.transition = "opacity 1s";
-
   $w.scroll(function() {
-
     var scrollTop = $w.scrollTop();
     var shouldBeFixed = scrollTop > navHomey;
     if (shouldBeFixed && !isFixed) {
       nav.css({
         position: 'fixed',
+        opacity: 0.5,
         top: 0,
         left: nav.offset().left,
-        width: nav.width(),
-        zIndex: 2
+        width: nav.width()
       });
-      // nav.fadeTo("slow", 0.5 );
       isFixed = true; 
     }
-
+    //If Nav Menu reaches to the top, this activates.
     else if (!shouldBeFixed && isFixed)
     {
       nav.css({
         position: 'static',
-        opacity: 1
+        opacity: 1,
+        boxShadow: '10px 20px 30px teal',
+        zIndex: 1
       });
       isFixed = false;
     }
   });
-
-
 
   // //
   // $('#contact-me').localScroll({
@@ -158,51 +133,11 @@ $(document).ready(function () {
     mediaHeight: 1060,
     parallax: true,
     touch: false
-
   });
 
   $('#demo-slider2').verticalSlider();
 
   $('#demo-slider').verticalSlider({
-  scrollThreshold: 20,
-
-        // Element on which informational classes will be put (current section index, last section...)
-        infoSelector: 'body',
-
-        // Autoplay functionality
-        autoplay: false,
-        autoplayDuration: 6000,
-
-        // Animations settings
-        animVisible: 'vs_translateNone',
-        animUp: 'vs_translateUp',
-        animUpHalf: 'vs_translateUp.half',
-        animBottom: 'vs_translateDown',
-        animBottomHalf: 'vs_translateDown.half',
-        animBounceUp: 'vs_bounceUp',
-        animBounceDown: 'vs_bounceDown',
-        animEasing: [0.77, 0, 0.175, 1],
-        animDuration: 800,
-
-        // Callback functions
-        afterInit: function( currentSection, sectionsNumber ) {
-      console.log( 'afterInit: ' + currentSection + ' ' + sectionsNumber );
-        },
-
-        beforeMove: function( currentSection, sectionsNumber ) {
-            console.log( 'beforeMove: ' + currentSection + ' ' + sectionsNumber );
-        },
-
-        afterMove: function( currentSection, sectionsNumber ) {
-          console.log( 'afterMove: ' + currentSection + ' ' + sectionsNumber );
-        }
+    afterInit: function( currentSection, sectionsNumber  ) { return true; }
   });
-
-  // //create a scene
-  // new ScrollMagic.Scene({
-  //       duration: 100,    // the scene should last for a scroll distance of 100px
-  //       offset: 50        // start this scene after scrolling for 50px
-  //   })
-  //   .setPin("#body") // pins the element for the the scene's duration
-  //   .addTo(controller); // assign the scene to the controller
 });
