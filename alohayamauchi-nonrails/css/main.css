@@ -38,7 +38,6 @@ body {
 nav {
 	height: 3em;
 	text-align: center;
-	box-shadow: 0px 5px 10px black;
 }
 
 h1, h2, h3, h4 {
@@ -52,7 +51,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.0em;
+	font-size: 2.0em;
 	text-align: center;
 }
 
@@ -76,7 +75,7 @@ strong {
 }
 
 header {
-	background: #004763;
+	background: #298fb7;
 }
 
 main {
@@ -87,6 +86,33 @@ main {
 section {
 	font-size: 1.5em;
 	margin: 1em;
+}
+
+article {
+	position: relative;
+	width: 100%;
+	height: 370px;
+	overflow: hidden;
+	border-top: 4px solid #fff;
+	border-bottom: 4px solid #fff;
+}
+article img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom:0;
+	left: 0;
+}
+
+#portfolio-section {
+	position: absolute;
+	height: 600px;
+	overflow-x: scroll;
+}
+
+.section.portfolio {
+	margin-top: 0;
+	padding-top: 0;
 }
 
 .about-me {
@@ -162,47 +188,29 @@ section {
 .fullpage-slide {
 	text-align: center;
 }
-/*.parallaxParent {
-		height: 100vh;
-		overflow: hidden;
-}
-
-.parallaxParent > * {
-		height: 200%;
-		position: relative;
-		top: -100%;
-}
-*/
 
 #no_transition {
     transition: none !important;
 }
 
 #section1{
-    background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
-    background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
-    background: linear-gradient(#4BBFC3,#7BAABE);
+    background: #85E0FF !important;
 }
 #section2{
-    background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#969ac6));
-    background: -webkit-linear-gradient(#7BAABE, #969AC6);
-    background: linear-gradient(#7BAABE,#969AC6);
+    background-color: #BFF2AB;
 }
 #section3{
-    background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#92a1ca));
-    background: -webkit-linear-gradient(#969AC6, #92A1CA);
-    background: linear-gradient(#969AC6,#92A1CA);
+	background-color: #85E0FF;
 }
 #section4{
-    background: -webkit-gradient(linear, top left, bottom left, from(#92a1ca), to(#76c2bd));
-    background: -webkit-linear-gradient(#92A1CA, #76C2BD);
-    background: linear-gradient(#92A1CA,#76C2BD);
+	background-color: #BFF2AB;
 }
 
 #section5{
-    background: -webkit-gradient(linear, top left, bottom left, from(#92a1ca), to(#76c2bd));
-    background: -webkit-linear-gradient(#92A1CA, #76C2BD);
-    background: linear-gradient(#92A1CA,#76C2BD);
+	background-color: #85E0FF;
+/*    background: -webkit-gradient(linear, top left, bottom left, from(#FFAD8C), to(#FFED8C));
+    background: -webkit-linear-gradient(#FFAD8C, #FFED8C);
+    background: linear-gradient(#FFAD8C,#FFED8C);*/
 }
 
 .vs-section {
@@ -220,6 +228,10 @@ section {
 .vs-section:nth-of-type(4) { background-image: url('https://unsplash.it/1920/1276?image=403'); }
 .vs-section:nth-of-type(5) { background-image: url('https://unsplash.it/1920/1276?image=203'); }
 
+#vs-section-portfolio {
+	background: white;
+}
+
 .slide-div {
 	background-color: rgba(0,0,0,0.65);
 	padding: 5em 0;
@@ -233,6 +245,7 @@ section {
 	outline: none;
 }
 
+
 .slick-slide h1 {
 	font-size: 1em;
 	color: #fff;
@@ -241,15 +254,19 @@ section {
 }
 
 .slick-slide h1:hover {
-	color: teal;
+	color: #BFF22B;
 	-webkit-transition: all .7s ease;
 }
 
 .slick-center h1 {
 	content:'';
 	font-size: 2em;
-	color: yellow;
 	-webkit-transition: all .7s ease;
+}
+
+.skills-slider {
+	max-width: 800px;
+	margin: 0 200px;
 }
 
 footer {

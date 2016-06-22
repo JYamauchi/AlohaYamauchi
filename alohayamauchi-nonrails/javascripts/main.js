@@ -20,19 +20,30 @@ $(document).ready(function () {
     afterInit: function( currentSection, sectionsNumber  ) { return true; }
   });
 
+  $('#demo-slider2').verticalSlider({
+    afterInit: function( currentSection, sectionsNumber  ) { return true; }
+  });
+
   $('#fullpage').fullpage({
     //Accessibility
     keyboardScrolling: true,
-    sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000']
+    sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+    scrollOverflow: true
   });
 
   $('.skills-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow: $('.skills-prev'),
-    nextArrow: $('.skills-next')
+    infinite: true,
+    mobileFirst: true,
+    prevArrow: $(".pp2"),
+    nextArrow: $(".nn2"),
+    responsive: [{
+        breakpoint: 500,
+        settings: {
+            slidesToShow: 2
+        }
+     }]
   });
 
   //For Navigation Menu
@@ -59,9 +70,7 @@ $(document).ready(function () {
     {
       nav.css({
         position: 'static',
-        opacity: 1,
-        boxShadow: '10px 20px 30px teal',
-        zIndex: 1
+        opacity: 1
       });
       isFixed = false;
     }
