@@ -9,11 +9,12 @@ $(document).ready(function () {
   //Slick Slider Navigation Menu
   $('.slider-nav').slick({
     centerMode: true,
-    centerPadding: '50px',
+    centerPadding: '0%',
     slidesToShow: 3,
-    // slidesToScroll: 1,
+    slidesToScroll: 1,
     asNavFor: '.slider-main',
     focusOnSelect: true,
+    variableWidth: true
   });
 
   $('#demo-slider').verticalSlider({
@@ -27,24 +28,15 @@ $(document).ready(function () {
   $('#fullpage').fullpage({
     //Accessibility
     keyboardScrolling: true,
-    sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000'],
+    // sectionsColor: ['#85E0FF', '#BFF2AB', '#85E0FF', '#BFF2AB'],
     scrollOverflow: true
   });
 
-  $('.skills-slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    mobileFirst: true,
-    prevArrow: $(".pp2"),
-    nextArrow: $(".nn2"),
-    responsive: [{
-        breakpoint: 500,
-        settings: {
-            slidesToShow: 2
-        }
-     }]
-  });
+  // $('#fp-resume').fullpage({
+  //   keyboardScrolling: true,
+  //   scrollOverflow: true,
+  //   sectionsColor: ['#85E0FF']
+  // });
 
   //For Navigation Menu
   var nav = $('header');
