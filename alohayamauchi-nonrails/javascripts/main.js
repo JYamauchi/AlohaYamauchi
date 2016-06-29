@@ -28,15 +28,8 @@ $(document).ready(function () {
   $('#fullpage').fullpage({
     //Accessibility
     keyboardScrolling: true,
-    // sectionsColor: ['#85E0FF', '#BFF2AB', '#85E0FF', '#BFF2AB'],
     scrollOverflow: true
   });
-
-  // $('#fp-resume').fullpage({
-  //   keyboardScrolling: true,
-  //   scrollOverflow: true,
-  //   sectionsColor: ['#85E0FF']
-  // });
 
   //For Navigation Menu
   var nav = $('header');
@@ -68,6 +61,13 @@ $(document).ready(function () {
     }
   });
 
+  $('.parallax-window').parallax({
+    imageSrc: 'http://www.alohayamauchi.com/images/portfolio/Restofy-CP.png',
+    speed: 0.2,
+    zIndex: 1
+  });
+
+
   // //
   // $('#contact-me').localScroll({
   //   target: '#contact',
@@ -81,20 +81,20 @@ $(document).ready(function () {
   // });
 
   //init imageScroll method
-  $('.img-holder').imageScroll({
-    image: null,
-    imageAttribute: 'image',
-    container: $('.slide-parallax'),
-    windowObject: $(window),
-    speed:.2,
-    coverRatio:.6,
-    holderMinHeight: 600,
-    holderMaxHeight: null,
-    extraHeight: 50,
-    mediaWidth: 1900,
-    mediaHeight: 1060,
-    parallax: true,
-    touch: false
-  });
+  // $('.img-holder').imageScroll({
+  //   image: null,
+  //   imageAttribute: 'image',
+  //   container: $('body'),
+  //   windowObject: $(window),
+  //   speed:.2,
+  //   coverRatio:.6,
+  //   holderMinHeight: 600,
+  //   holderMaxHeight: null,
+  //   extraHeight: 50,
+  //   mediaWidth: 1900,
+  //   mediaHeight: 1060,
+  //   parallax: true,
+  //   touch: false
+  // });
 
 });

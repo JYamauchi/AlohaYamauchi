@@ -1,90 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"> 
-            <!-- Webite Title -->
-        <title>Aloha Yamauchi</title>
-            <!-- CSS Content -->
-        <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
-        <link rel="stylesheet" type="text/css" href="bower_components/pagePiling.js/jquery.pagepiling.css" />
-        <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css"/>
-            <!-- My CSS File -->
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-    </head>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=370, initial-scale=1.0, maximum-scale=1">
+
+    <title>Aloha Yamauchi</title>
+
+    <!-- CSS Content -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/vertical-slider.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>    
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#home" class='smoothScroll'>RESUME</a></li>
-                <li><a href='#about-me' class='smoothScroll'>ABOUT ME</a></li>
-                <li>PORTFOLIO</li>
-                <li>BLOGS</li>
-                <li><a href= "#contact">CONTACT ME</a></li>
-            </ul>
+            <div class="slider-nav">
+                <div><h1 class="h1-nav">RESUME</h1></div>
+                <div><h1 class="h1-nav">ABOUT</h1></div>
+                <div><h1 class="h1-nav">PORTFOLIO</h1></div>
+                <div><h1 class="h1-nav">BLOGS</h1></div>
+                <div><h1 class="h1-nav">CONTACT</h1></div>
+            </div>
         </nav>
     </header>
-    <div class="slider-nav">
-    <div>Slide 1</div>
-    <div>Slide 2</div>
-    <div>Slide 3</div>
-    <div>Slide 4</div>
-    </div>
-    <div class="slider-front">
-        <div class='slide'><a href="#"></a><img src="https://s3-us-west-1.amazonaws.com/hawaii-com-wp/wp-content/uploads/2015/08/24125942/Hilton-Hawaiian-Village-1024x589.jpg"></div>
-        <div class='slide'><a href="#"></a><img src="http://www.astonhotels.com/assets/slides/690x380-Hawaii-Sunset.jpg"></div>
-        <div class='slide'><a href="#"></a><img src="https://s3-us-west-1.amazonaws.com/hawaii-com-wp/wp-content/uploads/2015/08/25114140/royalKona_gallery051.jpg"></div>
-        <div class='slide'><a href="#"></a><img src="http://www.hawaiimagazine.com/sites/default/files/field/image/St.Regis_.jpg"></div>
-    </div>
-
-        <div id='fullpage'>
-            <div class="section">
-            <a name='home'></a>
-                <div class="jumbotron-title">
-                    <h1>Aloha Yamauchi</h1>
-                </div>
-                <div id="jumbotron">
-                    <img src="http://alohayamauchi.com/images/background/Lanikai-Sunrise-bg-web.png">
-                </div>
-            </div>
-            <!-- <div class="jumbotron">
-                <div class="jumbotron1"><img src="http://alohayamauchi.com/images/Beach-Night.png"></div>
-                <img class="jumbotron2" src="http://alohayamauchi.com/images/Galaxy-BG.png" ></div>
-            </div> -->
-
-          <!--   <div class="img-holder" data-image="http://alohayamauchi.com/images/background/Lanikai-Sunrise-bg-web.png" data-image-mobile="http://alohayamauchi.com/images/background/Lanikai-Sunrise-bg-web.png" data-width="1680" data-height="1050"></div> -->
-              
-            <div class="section">
-                <section><p>Full-stack web developer with a background in design who is passionate about creating digital products those provide an enjoyable user experience starting from a seamless UI down to a reliable technical infrastructure. A hard worker, relentless in my drive to solve complex problems and always hungry to learn more. Team player who thrives in the collaboration process and appreciates the value of diverse backgrounds and opinions.</p>
-                </section>
-            </div>
-            <div class="section">
-                <div class="img-holder" data-image="http://alohayamauchi.com/images/photography/JY_Waimea-Bay1.JPG" data-image-mobile="http://s3.postimg.org/5xsysoxc3/obt1.jpg" data-width="1600" data-height="900">
-                </div>
-            </div>
-
-            <div class="section">
-                <div class='content'>
-                    <div class='about-me'>
-                        <a name="about-me"></a>
-                        <h1>Jared Yamauchi</h1>
-                        <h2>Web Developer | Designer</h2>
-                        <div class='about-me-description'>
-                            <h3>About me</h3>
-                            My name is Jared Yamauchi. I was born and raised in Honolulu, Hawaii. As a media designer, I grew up enjoying painting and drawing since elementary school to high school. During early year 2000s, the computer technology started to grow before MySpace and Facebook had been established and that is when I became attracted to digital designs.
-                        </div>
-                        <div class='about-me-detail'>
-                            <h3>Details</h3>
-                            <h4>Hometown:</h4>
-                            <a href="https://www.google.com/maps/place/Aiea,+HI+96701/@21.3865814,-157.9394144,14z/data=!3m1!4b1!4m5!3m4!1s0x7c0068b8f5c2c16f:0xcf3491935121c26e!8m2!3d21.386338!4d-157.9255357">Aiea, Hawaii</a>
-                            <h4>Current Location:</h4>
-                            Washington, DC
-                            <h4>Interests</h4>
-
-                        </div>                     
-                        <img src='http://alohayamauchi.com/images/myself.jpg' class='myself-pic'>
-                    </div>
-
+    <div class="slider-main">
+        <div class='slide'><a href="#"></a>
+                <div class="section" id="resume-div">
+                    <section>
+                        <p>Full-stack web developer with a background in design who is passionate about creating digital products those provide an enjoyable user experience starting from a seamless UI down to a reliable technical infrastructure. A hard worker, relentless in my drive to solve complex problems and always hungry to learn more. Team player who thrives in the collaboration process and appreciates the value of diverse backgrounds and opinions.
+                        </p>
+                    </section>
                     <div class='skill-software'>
                         <p><h2>Skills</h2>
                         <strong>Computer Languages & Frameworks:</strong> Ruby | Ruby on Rails | JavaScript | jQuery | HTML5 | CSS3 | Git | Sinatra | AJAX | Devise | Command Line <br>
@@ -92,7 +41,6 @@
                         <strong>Methologies:</strong> Object Oriented Programming | MVC Pattern |  Responsive Design/CSS | Authenication | User Stories | ERDs | Wireframing | Development<br>
                         <br></p>
                     </div>
-
                     <div class='certificates'>
                         <p><h2>Certificates</h2>
                         <strong>Section 508 Trusted Tester</strong> <span class='content-date'> Received in April 2016</span><br>
@@ -101,7 +49,6 @@
                         <p><strong>Full-Stack Web Development</strong> <span class='content-date'> Received in June 2016 </span><br>
                         General Assembly, Washington, DC<br></p> 
                     </div>
-
                     <div class='education'>
                         <p><h2>Education</h2>
                         <strong>General Assembly</strong> in Washington, DC <span class='content-date'>March to June 2015</span><br>
@@ -113,7 +60,6 @@
                         <p><strong>Rochester Institute of Technology</strong> in Rochester, NY <span class='content-date'>September 2005 to December 2009</span><br>
                         Candidate for BFA in New Media Design (transferred to Gallaudet)<br></p>
                     </div>
-
                     <div class='work-experience'>
                         <p><h2>Work and Web Development Experiences</h2>
                         <p><strong>Section 508 Trusted Tester and Junior Developer</strong> <span class="content-date">January 2016 to March 2016</span><br>
@@ -156,35 +102,139 @@
                         <p><strong>Teacher Assistant</strong> <span class='content-date'>January 2010 to July 2010</span><br>
                         Ewa Beach Elementary School, Ewa Beach, HI</p></p>
                     </div>
-                    <div class='contact'>
-                        <a name='#contact'></a>
-                        <h2>Contact Me</h2>
-                        <p><form method="post" name='EmailMe' action="php/form-to-email.php">
-                        Enter name: <input name='EmailMe-name' type="text" /><br>
-                        Enter your Email address: <input name='Em ailMe-email' type="text"/><br>
-                        Enter Message: <textarea name='EmailMe-text' rows="3" cols="50"></textarea>
-                        <input type='submit' value='Send Email'/> 
-                        </form>
-                        <?php
-                            echo "This is PHP";
-                        ?>
-                        </p>
+                    <br><br>
+                </div>
+        </div>
+        <div class='slide'><a href="#"></a>
+            <div class="vs-slider" id="demo-slider">
+                <div class="vs-section active">
+                    <div class="section-div">
+                        <h2>Section 1</h2>
+                         <div class='about-me-description'>
+                            <h3>About me</h3>
+                            My name is Jared Yamauchi. I was born and raised in Honolulu, Hawaii. As a media designer, I grew up enjoying painting and drawing since elementary school to high school. During early year 2000s, the computer technology started to grow before MySpace and Facebook had been established and that is when I became attracted to digital designs.
+                        </div>
+                    </div>
+                </div>
+                <div class="vs-section">
+                    <div class="section-div">
+                        <h2>Section 2</h2>
+                        
+                    </div>
+                </div>
+                <div class="vs-section">
+                    <div class="section-div">
+                        <h2>Section 3</h2>
+                    </div>
+                </div>
+                <div class="vs-section">
+                    <div class="section-div">
+                        <h2>Section 4</h2>
+                    </div>
+                </div>
+                <div class="vs-section">
+                    <div class="section-div">
+                        <h2>Section 5</h2>
                     </div>
                 </div>
             </div>
-            <footer>
-                Copyright © Jared Yamauchi 2015
-        </footer>
+        </div>
+        <div class='slide'><a href="#"></a>
+            <div class="section" id="portfolio-div">
+                    <h2>List of my Web Development Projects</h2>
+                    <article>  
+                        <img src="http://www.alohayamauchi.com/images/portfolio/Geo-Pic-CP.png" alt="Geo-Pic" data-parallax='{"y" : 230}'/>
+                    </article>
+                    <h3>Geo-Pic</h3> 
+                    <section><a href='https://geo-pic.herokuapp.com/'>Geo-Pic Project Link</a><br>
+                        - Ruby on Rails project that allows users to search through a database of Flickr pictures by country or city to explore places they have never been.<br>
+                        - This website uses Flickr API to gather and display pictures. 
+                    </section>
+<!--                     <article>  
+                        <img src="http://www.alohayamauchi.com/images/portfolio/Restofy-CP.png" alt="Restofy" data-parallax='{"y" : 530}'/>
+                    </article> -->
+                    <div class="parallax-window">
+                    </div>
+                     <h3>Restofy</h3>
+                    <section><a href='http://restofy.herokuapp.com/'>Restofy Project Link</a>
+                        - Developed an application that allows users to browse through a database of restaurants in Washington, DC visualized on a map.<br>
+                        - This website uses MapBox API (similar to Google Map) to display the map of Washington, DC, while integrating with CSV formatted database (it was converted into XML). <br>
+                    </section>
+                    <article>  
+                        <img src="http://www.alohayamauchi.com/images/portfolio/DJ-Nicar-CP.png" alt="DJ Nicar's Webiste Cover Page" data-parallax='{"y" : 530}'/>
+                    </article>
+                    <h3>DJ Nicar’s Website</h3>
+                    <section><a href='http://www.djnicar.com'>DJ Nicar</a>
+                        - Helped setting up the WordPress based website for my friend who is a professional DJ.<br>
+                        - He preferred using WordPress because he wanted to add blogs, pictures, and music clips on his website in the future. <br>
+                    </section>
+<!--                     <article>  
+                        <img src="http://www.alohayamauchi.com/images/portfolio/GWADA-CP.png" alt="Greater Washington Asian Deaf Association Website Cover Page" data-parallax='{"y" : 530}'/>
+                    </article> -->
+                    <div class="img-holder" data-image="http://www.alohayamauchi.com/images/portfolio/GWADA-CP.png"></div>
+                    <h3>Greater Washington Asian Deaf Association Website</h3> 
+                    <section>http://gwada-dc.org/  
+                        - I volunteered to renovate the deaf non-profit organization’s website as I started working on it last week. This website is still under construction. 
+                    </section>
+
+                    <h3>My Personal Website</h3> 
+                    <section>http://alohayamauchi.com 
+                        - I just started developing on my personal website few weeks ago. 
+                        - This website is being written from scratch with only HTML, CSS, and JavaScript with JQuery codes. 
+                    </section>
+            </div>
+        </div>
+        <div class='slide'><a href="#"></a>
+            <div id="fullpage">
+                <div class="section active" id="section1">
+                    <h2>Welcome to my Blog</h2>
+                </div>
+                <div class="section" id="section2">
+                    <h3>Slide 2</h3>
+                </div>
+                <div class="section" id="section3">
+                </div>
+                <div class="section" id="section4">
+                </div>
+            </div>
+
+        </div>
+        <div class='slide'>
+            <div class='contact'>
+                <a name='#contact'></a>
+                <h2>Contact Me</h2>
+                <p><form method="post" name='EmailMe' action="php/form-to-email.php">
+                Enter name: <input name='EmailMe-name' type="text" /><br>
+                Enter your Email address: <input name='EmailMe-email' type="text"/><br>
+                Enter Message: <textarea name='EmailMe-text' rows="3" cols="50"></textarea>
+                <input type='submit' value='Send Email'/> 
+                </form>
+                <?php
+                echo "This is PHP";
+                ?>
+                </p>
+            </div>
+        </div>
     </div>
-        <!-- </div> -->
+
         <!-- Javascript or Jquery Content -->
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery-migrate-3.0.0.js"></script>
-    <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
-    <script type="text/javascript" src="node_modules/parallax-imagescroll/jquery.imageScroll.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="javascripts/mousewheel.min.js"></script>
+    <script type="text/javascript" src="javascripts/hammer.min.js"></script>
+    <script type="text/javascript" src="javascripts/velocity.min.js"></script>
+    <script type="text/javascript" src="javascripts/velocity.ui.min.js"></script>
+    <script type="text/javascript" src="javascripts/slick.min.js"></script>
+    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+    <script type="text/javascript" src="javascripts/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.fullPage.js"></script>
+<!--     <script type="text/javascript" src="node_modules/parallax-imagescroll/jquery.imageScroll.js"></script> -->
+    <script type="text/javascript" src="javascripts/parallax.min.js"></script>
     <script type="text/javascript" src="javascripts/smoothscroll.js"></script>
-        <!-- Main Javascript -->
+    <script type="text/javascript" src="javascripts/vertical-slider.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.parallax-scroll.js"></script>
+    <!-- Main Javascript -->
     <script type="text/javascript" src="javascripts/main.js"></script>
+
 </body>
 </html>
