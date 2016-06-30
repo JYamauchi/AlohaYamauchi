@@ -55,18 +55,23 @@ h2 {
 }
 
 h3 {
+	margin: 1em 0;
 	font-family: 'Open Sans Condensed', italic;
 	font-weight: 300, italic;
 	font-size: 2em;
 }
 
 h4 {
-	font-size: 0.8em;
+	font-size: 1.5em;
 }
 
 a {
 	color: #004763;
 	text-decoration: none;
+}
+
+i {
+
 }
 
 strong {
@@ -83,20 +88,15 @@ section {
 	margin: 1em;
 }
 
-/*article {
-	position: relative;
-	width: 100%;
-	height: 370px;
-	overflow: hidden;
-	border-top: 4px solid #fff;
-	border-bottom: 4px solid #fff;
+#larger-icon {
+	background-color: teal;
+	border: 2px solid #005055;
+	border-radius: 50%;
+	max-height: 5em;
+	max-width: 5em;
+	font-size: 3em;
 }
-article img {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-*/
+
 #resume-div {
 	padding: 0 20px 50px 20px;
 	background: #BFF2AB;
@@ -109,14 +109,15 @@ article img {
 	overflow: hidden;
 }
 
-.section.portfolio {
-	margin-top: 0;
-	padding-top: 0;
-}
-
 .section-div {
+	padding: auto;
+	width: 100%;
+	height: 100%;
 	color: #fff;
+	font-size: 1em;
+	text-align: center;
 	background-color:rgba(0, 0, 0, 0.5);
+	vertical-align: middle;
 }
 
 .about-me {
@@ -140,12 +141,6 @@ article img {
 	text-align: center;
 }
 
-.about-me-description {
-	position: relative;
-	font-size: 20px;
-	margin-left: 50px;
-}
-
 .about-me-detail {
 	position: relative;
 	float: right;
@@ -159,8 +154,6 @@ article img {
 	position: relative;
   -webkit-transform: translateZ(0);
 }
-
-
 
 .content {
 	margin: 0 1.5em;
@@ -198,6 +191,7 @@ article img {
 }
 
 .vs-section {
+	vertical-align: middle;
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -205,12 +199,11 @@ article img {
 	-o-background-size: cover;
 	background-size: cover;
 }
-
 .vs-section:nth-of-type(1) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-JumboTron-Lanikai.png');}
 .vs-section:nth-of-type(2) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-GreenBranch.png'); }
 .vs-section:nth-of-type(3) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-Mauna-Kea.png'); }
-.vs-section:nth-of-type(4) { background-image: url('https://unsplash.it/1920/1276?image=403'); }
-.vs-section:nth-of-type(5) { background-image: url('https://unsplash.it/1920/1276?image=203'); }
+.vs-section:nth-of-type(4) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-AkakaFalls.png'); }
+.vs-section:nth-of-type(5) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-WaimeaBay.png'); }
 
 #vs-section-portfolio {
 	background: white;
