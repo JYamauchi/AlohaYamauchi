@@ -11,6 +11,8 @@
 
 * {
 	box-sizing: border-box;
+	font-family: 'Open Sans Condensed', italic;
+	font-weight: 300, italic;
 }
 
 html, body {
@@ -38,6 +40,7 @@ header {
 }
 nav {
 	text-align: center;
+	padding: 0.5em 0;
 }
 h1, h2, h3, h4 {
 	margin-top: 0; 
@@ -50,6 +53,9 @@ h1 {
 }
 
 h2 {
+	margin: 0.5em 0;
+	font-family: 'Open Sans Condensed', italic;
+	font-weight: 300, italic;
 	font-size: 2.0em;
 	text-align: center;
 }
@@ -88,13 +94,24 @@ section {
 	margin: 1em;
 }
 
+.fp-tableCell {
+	background-image: url("http://alohayamauchi.com/images/background/triangles-pattern.jpg");
+	background-repeat: repeat;
+}
+
+.section2 {
+	height: 600px;
+	overflow-y: scroll;
+}
+
 #larger-icon {
 	background-color: teal;
 	border: 2px solid #005055;
 	border-radius: 50%;
-	max-height: 5em;
-	max-width: 5em;
+	height: 1.2em;
+	width: 1.2em;
 	font-size: 3em;
+	text-align: center;
 }
 
 #resume-div {
@@ -113,39 +130,62 @@ section {
 	padding: auto;
 	width: 100%;
 	height: 100%;
-	color: #fff;
 	font-size: 1em;
 	text-align: center;
-	background-color:rgba(0, 0, 0, 0.5);
 	vertical-align: middle;
 }
 
-.about-me {
-	height: 400px;
-	border-bottom: 1px solid #004763;
-	background: #E8E8E8;
-	width: 100%;
+#section-div-jared{
+	background-image: url("http://www.alohayamauchi.com/images/background/AlohaYamauchi-JumboTron-Lanikai.png");
+	background-size: 100%;
+	color: #fff;
+}
+
+.jumboTron-box {
+	margin-top: 4em;
+	padding-bottom: 0.5em;
+	background-color:rgba(0, 0, 0, 0.5);
+	font-size: 2em;
+	border-top: 0.1em solid #fff;
+	border-bottom: 0.1em solid #fff;
+
+}
+
+.jumboTron-box h2 {
+	margin: 0.2em;
+}
+
+#jumboTron {
+    height: 400px;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 100px;
+}
+
+.jumboTron2 {
+	background: url("http://www.alohayamauchi.com/images/background/AlohaYamauchi-JumboTron-Lanikai.png");
+}
+
+#skills-stars {
+	text-align: right;
 }
 
 .myself-pic {
 	position: relative;
-	width: 8em;
-	border-radius: 5em;
+	float: left;
+	left: 5em;
+	top: 5em;
+	width: 15em;
+	border-radius: 10em;
+/*	border: 0.1em solid #fff;*/
 	display: block;
 	text-align: center;
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin: 2em;
+	box-shadow: -0.3em 0.3em 1em #000;
 }
 
-.about-me-name {
+.contact {
 	text-align: center;
-}
-
-.about-me-detail {
-	position: relative;
-	float: right;
-	max-width: 400px;
-	right: 200px;
 }
 
 .img-holder {
@@ -160,26 +200,6 @@ section {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 300;
 	font-size: 1.6em;
-}
-
-.content-italic {
-	font-style: italic;
-}
-
-.content-date {
-	float: right;
-}
-
-.skill-software {
-	border-bottom: 1px solid #004763;
-}
-
-.certificates {
-	border-bottom: 1px solid #004763;
-}
-
-.education {
-	border-bottom: 1px solid #004763;
 }
 
 .fullpage-slide {
@@ -199,11 +219,11 @@ section {
 	-o-background-size: cover;
 	background-size: cover;
 }
-.vs-section:nth-of-type(1) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-JumboTron-Lanikai.png');}
+/*.vs-section:nth-of-type(1) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-JumboTron-Lanikai.png');}
 .vs-section:nth-of-type(2) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-GreenBranch.png'); }
 .vs-section:nth-of-type(3) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-Mauna-Kea.png'); }
 .vs-section:nth-of-type(4) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-AkakaFalls.png'); }
-.vs-section:nth-of-type(5) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-WaimeaBay.png'); }
+.vs-section:nth-of-type(5) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-WaimeaBay.png'); }*/
 
 #vs-section-portfolio {
 	background: white;
@@ -226,7 +246,7 @@ section {
 
 .slick-slide h1 {
 	margin: 0 3em;
-	font-size: 2em;
+	font-size: 2.5em;
 	opacity: 0.5;
 	color: #fff;
 	cursor: pointer;
@@ -242,7 +262,6 @@ section {
 .slick-center h1 {
 	content:'';
 	opacity: 1;
-	font-size: 2em;
 	-webkit-transition: all .7s ease;
 }
 

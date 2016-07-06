@@ -67,6 +67,8 @@ $(document).ready(function () {
     zIndex: 1
   });
 
+  $('.jumboTron2').enllax();
+
 
   // //
   // $('#contact-me').localScroll({
