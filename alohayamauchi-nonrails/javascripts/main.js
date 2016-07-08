@@ -1,36 +1,4 @@
 $(document).ready(function () {
-  //Slick Slider Main
-  $('.slider-main').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    asNavFor: '.slider-nav'
-  });
-  //Slick Slider Navigation Menu
-  $('.slider-nav').slick({
-    centerMode: true,
-    centerPadding: '0%',
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-main',
-    focusOnSelect: true,
-    variableWidth: true
-  });
-
-  $('#demo-slider').verticalSlider({
-    afterInit: function( currentSection, sectionsNumber  ) { return true; }
-  });
-
-  $('#demo-slider2').verticalSlider({
-    afterInit: function( currentSection, sectionsNumber  ) { return true; }
-  });
-
-  $('#fullpage').fullpage({
-    //Accessibility
-    keyboardScrolling: true,
-    scrollOverflow: true
-  });
-
   //For Navigation Menu
   var nav = $('header');
   var navLi = $('nav');
@@ -59,6 +27,33 @@ $(document).ready(function () {
       });
       isFixed = false;
     }
+  });  
+  //Slick Slider Main
+  $('.slider-main').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.slider-nav'
+  });
+  //Slick Slider Navigation Menu
+  $('.slider-nav').slick({
+    centerMode: true,
+    centerPadding: '0%',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-main',
+    focusOnSelect: true,
+    variableWidth: true
+  });
+  //FullPage JS produces a slide section for each full screen part
+  $('#fullpage').fullpage({
+    //Accessibility
+    keyboardScrolling: true,
+    scrollOverflow: true
+  });
+
+  $('#demo-slider').verticalSlider({
+    afterInit: function( currentSection, sectionsNumber  ) { return true; }
   });
 
   $('.parallax-window').parallax({
@@ -66,8 +61,6 @@ $(document).ready(function () {
     speed: 0.2,
     zIndex: 1
   });
-
-  $(".parallax-1").enllax();
 
   //init imageScroll method
   // $('.img-holder').imageScroll({
@@ -85,5 +78,4 @@ $(document).ready(function () {
   //   parallax: true,
   //   touch: false
   // });
-
 });

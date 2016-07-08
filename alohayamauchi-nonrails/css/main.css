@@ -46,12 +46,12 @@ h1, h2, h3, h4 {
 	margin-top: 0; 
 	margin-bottom: 0;
 }
-
+/* H1 is for Nav Bar */
 h1 {
 	font-size: 1.7em;
 	color: white;
 }
-
+/* H2 is for each slide's title */
 h2 {
 	margin: 0.5em 0;
 	font-family: 'Open Sans Condensed', italic;
@@ -59,7 +59,7 @@ h2 {
 	font-size: 2.0em;
 	text-align: center;
 }
-
+/* H3 is for each slide's section's title  */
 h3 {
 	margin: 1em 0;
 	font-family: 'Open Sans Condensed', italic;
@@ -76,24 +76,15 @@ a {
 	text-decoration: none;
 }
 
-i {
-
-}
-
 strong {
 	font-weight: 700;
-}
-
-main {
-	height: 100%;
-	background: #E8E8E8;
 }
 
 section {
 	font-size: 1.5em;
 	margin: 1em;
 }
-
+/* Main "body" for each slider page */
 .fp-tableCell {
 	background-image: url("http://alohayamauchi.com/images/background/triangles-pattern.jpg");
 	background-repeat: repeat;
@@ -103,7 +94,7 @@ section {
 	height: 600px;
 	overflow-y: scroll;
 }
-
+/* Increase the icons' size and customize */
 #larger-icon {
 	background-color: teal;
 	border: 2px solid #005055;
@@ -125,7 +116,7 @@ section {
 	background: #BFF2AB;
 	overflow: hidden;
 }
-
+/* Div for after the FullPage section */
 .section-div {
 	padding: auto;
 	width: 100%;
@@ -136,9 +127,14 @@ section {
 }
 
 #section-div-jared{
+	padding: auto;
+	width: 100%;
+	height: 100%;
 	background-image: url("http://www.alohayamauchi.com/images/background/AlohaYamauchi-JumboTron-Lanikai.png");
 	background-size: 100%;
 	color: #fff;
+		text-align: center;
+	vertical-align: middle;
 }
 
 .jumboTron-box {
@@ -181,7 +177,7 @@ section {
 }
 
 #section-portfolio {
-	
+
 }
 
 .contact {
@@ -219,11 +215,6 @@ section {
 	-o-background-size: cover;
 	background-size: cover;
 }
-/*.vs-section:nth-of-type(1) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-JumboTron-Lanikai.png');}
-.vs-section:nth-of-type(2) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-GreenBranch.png'); }
-.vs-section:nth-of-type(3) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-Mauna-Kea.png'); }
-.vs-section:nth-of-type(4) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-AkakaFalls.png'); }
-.vs-section:nth-of-type(5) { background-image: url('http://alohayamauchi.com/images/background/AlohaYamauchi-WaimeaBay.png'); }*/
 
 #vs-section-portfolio {
 	background: white;
@@ -247,7 +238,6 @@ section {
 	/*	get rid of blue outlines*/
 	outline: none;
 }
-
 
 .slick-slide h1 {
 	margin: 0 3em;
@@ -287,29 +277,14 @@ footer {
 	text-align: center;
 	margin: 0 0 0 0;
 }
-
-@-webkit-keyframes example {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
-}
-
-@keyframes example {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
-}
-
-/* For Regular Smart Phones */
+/*   | RESPONSIVE CSS ONLY |   */
+/*  Small or Regular Phones  */
 /* Portrait */
 @media only screen 
   and (min-device-width: 240px) 
   and (max-device-width: 375px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
-  	  	    /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
     }
@@ -382,7 +357,6 @@ footer {
   and (max-device-width: 670px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
-  	 /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
     }
@@ -428,15 +402,14 @@ footer {
 		-webkit-transition: all .7s ease;
 	}
 }
-/* For Small Phones (END) */
-/* For Big Smart Phones like IPhone Plus */
+/*  Small Phones (END) */
+/*  Large Phones ie IPhone Plus  */
 /* Portrait */
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
-  	    /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
     }
@@ -484,7 +457,6 @@ footer {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
-  	    /* For mobile phones: */
     [class*="col-"] {
         width: 100%;
     }
@@ -531,8 +503,8 @@ footer {
 		-webkit-transition: all .7s ease;
 	}
 }
-/* For Big Phones (END) */
-/* For IPads and Other Tablets */
+/*   Big Phones (END)  */
+/*  IPads & Other Tablets  */
 /* Portrait */
 @media only screen 
   and (min-device-width: 768px) 
@@ -564,4 +536,4 @@ footer {
 		-webkit-transition: all .7s ease;
 	}	
 }
-/* For IPads and Other Tablets (END) */
+/*  IPads & Other Tablets (END)  */
