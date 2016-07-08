@@ -146,8 +146,8 @@ section {
 	padding-bottom: 0.5em;
 	background-color:rgba(0, 0, 0, 0.5);
 	font-size: 2em;
-	border-top: 0.1em solid #fff;
-	border-bottom: 0.1em solid #fff;
+	border-top: 0.1em solid #298fb7;
+	border-bottom: 0.1em solid #298fb7;
 
 }
 
@@ -160,10 +160,6 @@ section {
     background-size: cover;
     box-sizing: border-box;
     padding: 100px;
-}
-
-.jumboTron2 {
-	background: url("http://www.alohayamauchi.com/images/background/AlohaYamauchi-JumboTron-Lanikai.png");
 }
 
 #skills-stars {
@@ -182,6 +178,10 @@ section {
 	text-align: center;
 	margin: 2em;
 	box-shadow: -0.3em 0.3em 1em #000;
+}
+
+#section-portfolio {
+	
 }
 
 .contact {
@@ -228,6 +228,11 @@ section {
 #vs-section-portfolio {
 	background: white;
 	overflow-x: scroll;
+}
+
+.parallax-1 {
+	background: url("http://www.alohayamauchi.com/images/portfolio/Geo-Pic-CP.png");
+	height: 15em;
 }
 
 .slide-div {
@@ -308,9 +313,14 @@ footer {
     [class*="col-"] {
         width: 100%;
     }
-     body {
+    body {
     	font-size: 1em;
     }
+
+    nav {
+    	padding: 0.7em 0;
+    }
+
     h1 {
 		font-size: 1em;
 		color: white;
@@ -324,9 +334,30 @@ footer {
     	font-size: 0.75em;
     }
 
+    #section-div-jared{
+		background-image: url("http://www.alohayamauchi.com/images/background/AlohaYamauchi-JumboTron-Lanikai.png");
+		background-size: auto 100%;
+		background-position: center;
+		color: #fff;
+	}
+
+	.jumboTron-box {
+		margin-top: 16em;
+	}
+
+	.jumboTron-box h2 {
+		font-size: 2.3em;
+	}
+
+	.myself-pic {
+		top: 3em;
+		margin: 0 10%;
+		width: 18em;
+	}	
+
 	.slick-slide h1 {
 		margin: 0 25px;
-		font-size: 2em;
+		font-size: 2.5em;
 		opacity: 0.5;
 		color: #fff;
 		cursor: pointer;
@@ -358,6 +389,11 @@ footer {
      body {
     	font-size: 3em;
     }
+
+    nav {
+    	padding: 0.7em 0;
+    }
+
     h1 {
 		font-size: 1em;
 		color: white;
@@ -373,7 +409,7 @@ footer {
 
 	.slick-slide h1 {
 		margin: 0 20px;
-		font-size: 2em;
+		font-size: 2.5em;
 		opacity: 0.5;
 		color: #fff;
 		cursor: pointer;

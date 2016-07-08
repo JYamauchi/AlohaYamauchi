@@ -67,20 +67,7 @@ $(document).ready(function () {
     zIndex: 1
   });
 
-  $('.jumboTron2').enllax();
-
-
-  // //
-  // $('#contact-me').localScroll({
-  //   target: '#contact',
-  //   axis: 'xy',
-  //   queue: true
-  // });
-
-  // // init controller
-  // var controller = new ScrollMagic.Controller({
-  //     globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}
-  // });
+  $(".parallax-1").enllax();
 
   //init imageScroll method
   // $('.img-holder').imageScroll({
