@@ -84,6 +84,16 @@ section {
 	font-size: 1.5em;
 	margin: 1em;
 }
+/* figure is for pictures on the Portfolio page */
+figure {
+	width: 750px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+
 /* Main "body" for each slider page */
 .fp-tableCell {
 	background-image: url("http://alohayamauchi.com/images/background/triangles-pattern.jpg");
@@ -204,6 +214,43 @@ section {
 .portfolio-image {
 	width: 750px;
 	height: 400px;
+}
+
+.portfolio-image-div {
+	font-size: 2em;
+}
+
+.portfolio-image-div img {
+	width:100%;
+	vertical-align: top;	
+}
+
+.portfolio-image-div:after, .portfolio-image-div:before {
+    position:absolute;
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.portfolio-image-div:after {
+    content:'\A';
+    width:100%; height:100%;
+    top:0; left:0;
+    background:#298fb7;
+}
+
+.portfolio-image-div:before {
+    content: attr(data-content);
+    width:100%;
+    color:#fff;
+    z-index:1;
+    padding:100px 35px;
+    text-align:center;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+
+.portfolio-image-div:hover:after, .portfolio-image-div:hover:before {
+	opacity: .8;
 }
 
 #no_transition {

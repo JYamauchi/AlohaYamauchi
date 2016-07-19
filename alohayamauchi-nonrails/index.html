@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <script src="https://use.fontawesome.com/50c8b61851.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
 </head>    
 <body>
     <header>
@@ -127,8 +127,12 @@
                 <div class="section-portfolio-list">
                     <h2>List of my Web Development Projects</h2>
                     <div class="row" id="row-portfolio">
-                        <div class="col-xs-12 col-md-8"> 
-                            <img src="http://www.alohayamauchi.com/images/portfolio/Geo-Pic-CP.png" class="portfolio-image">
+                        <div class="col-xs-12 col-md-8">
+                            <a href="https://geo-pic.herokuapp.com/">
+                            <div class="portfolio-image-div" data-content="Geo-Pic Project">
+                                <img src="http://www.alohayamauchi.com/images/portfolio/Geo-Pic-CP.png" class="portfolio-image" data-content="Geo-Pic Project">
+                            </div>
+                            </a>
                         </div>
                         <div class="col-xs-12 col-md-4" id="col-portfolio"> 
                             <h2>Geo-Pic</h2>
@@ -150,27 +154,36 @@
                             </section>
                         </div>
                     </div>
-                    <article>  
-                        <img src="http://www.alohayamauchi.com/images/portfolio/DJ-Nicar-CP.png" alt="DJ Nicar's Webiste Cover Page" data-parallax='{"y" : 530}'/>
-                    </article>
-                    <h3>DJ Nicar’s Website</h3>
-                    <section><a href='http://www.djnicar.com'>DJ Nicar</a>
-                        - Helped setting up the WordPress based website for my friend who is a professional DJ.<br>
-                        - He preferred using WordPress because he wanted to add blogs, pictures, and music clips on his website in the future. <br>
-                    </section>
-                    <article>  
-                        <img src="http://www.alohayamauchi.com/images/portfolio/GWADA-CP.png" alt="Greater Washington Asian Deaf Association Website Cover Page" data-parallax='{"y" : 530}'/>
-                    </article>
-                    <h3>Greater Washington Asian Deaf Association Website</h3> 
-                    <section>http://gwada-dc.org/  
-                        - I volunteered to renovate the deaf non-profit organization’s website as I started working on it last week. This website is still under construction. 
-                    </section>
-
-                    <h3>My Personal Website</h3> 
-                    <section>http://alohayamauchi.com 
-                        - I just started developing on my personal website few weeks ago. 
-                        - This website is being written from scratch with only HTML, CSS, and JavaScript with JQuery codes. 
-                    </section>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8">
+                            <img src="http://www.alohayamauchi.com/images/portfolio/DJ-Nicar-CP.png" class="portfolio-image">
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <h3>DJ Nicar’s Website</h3>
+                            <section><a href='http://www.djnicar.com'>DJ Nicar</a>
+                                - Helped setting up the WordPress based website for my friend who is a professional DJ.<br>
+                                - He preferred using WordPress because he wanted to add blogs, pictures, and music clips on his website in the future. <br>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8">
+                            <img src="http://www.alohayamauchi.com/images/portfolio/GWADA-CP.png" class="portfolio-image">
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <h3>Greater Washington Asian Deaf Association Website</h3> 
+                            <section>http://gwada-dc.org/  
+                                - I volunteered to renovate the deaf non-profit organization’s website as I started working on it last week. This website is still under construction. 
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>My Personal Website</h3> 
+                        <section>http://alohayamauchi.com 
+                            - I just started developing on my personal website few weeks ago. 
+                            - This website is being written from scratch with only HTML, CSS, and JavaScript with JQuery codes. 
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
@@ -216,7 +229,6 @@
     <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
     <script type="text/javascript" src="javascripts/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="javascripts/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="node_modules/parallax-imagescroll/jquery.imageScroll.js"></script>
     <!-- Main Javascript -->
     <script type="text/javascript" src="javascripts/main.js"></script>
 

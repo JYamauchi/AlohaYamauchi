@@ -61,19 +61,4 @@ $(document).ready(function () {
     speed: 0.2,
     zIndex: 1
   });
-
-  //init imageScroll method
-  $('.img-holder').imageScroll({
-    image: null,
-    imageAttribute: 'image',
-    container: $('body'),
-    windowObject: $(window),
-    speed:.2,
-    coverRatio:.6,
-    holderMinHeight: 600,
-    holderMaxHeight: null,
-    extraHeight: 50,
-    parallax: true,
-    touch: false
-  });
 });
