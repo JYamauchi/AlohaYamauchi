@@ -63,19 +63,17 @@ $(document).ready(function () {
   });
 
   //init imageScroll method
-  // $('.img-holder').imageScroll({
-  //   image: null,
-  //   imageAttribute: 'image',
-  //   container: $('body'),
-  //   windowObject: $(window),
-  //   speed:.2,
-  //   coverRatio:.6,
-  //   holderMinHeight: 600,
-  //   holderMaxHeight: null,
-  //   extraHeight: 50,
-  //   mediaWidth: 1900,
-  //   mediaHeight: 1060,
-  //   parallax: true,
-  //   touch: false
-  // });
+  $('.img-holder').imageScroll({
+    image: null,
+    imageAttribute: 'image',
+    container: $('body'),
+    windowObject: $(window),
+    speed:.2,
+    coverRatio:.6,
+    holderMinHeight: 600,
+    holderMaxHeight: null,
+    extraHeight: 50,
+    parallax: true,
+    touch: false
+  });
 });

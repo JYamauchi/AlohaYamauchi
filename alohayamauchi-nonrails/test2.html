@@ -7,19 +7,18 @@
 
     <!-- CSS Content -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/vertical-slider.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
 <body>
+        <div class="img-holder" data-image="http://www.astonhotels.com/assets/slides/690x380-Hawaii-Sunset.jpg" data-height="300" data-cover-ratio="0.75"></div>
         <h3>Geo-Pic</h3> 
         <section><a href='https://geo-pic.herokuapp.com/'>Geo-Pic Project Link</a><br>
             - Ruby on Rails project that allows users to search through a database of Flickr pictures by country or city to explore places they have never been.<br>
             - This website uses Flickr API to gather and display pictures. 
         </section>
-        <div class="parallax-window">
-        </div>
+        <div class="img-holder" data-image="http://www.alohayamauchi.com/images/portfolio/Restofy-CP.png" data-height="300" data-cover-ratio="0.75"></div>
          <h3>Restofy</h3>
         <section><a href='http://restofy.herokuapp.com/'>Restofy Project Link</a>
             - Developed an application that allows users to browse through a database of restaurants in Washington, DC visualized on a map.<br>
@@ -50,18 +49,15 @@
 
     <script type="text/javascript" src="javascripts/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="javascripts/mousewheel.min.js"></script>
-    <script type="text/javascript" src="javascripts/hammer.min.js"></script>
-    <script type="text/javascript" src="javascripts/velocity.min.js"></script>
-    <script type="text/javascript" src="javascripts/velocity.ui.min.js"></script>
-    <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
-    <script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
-    <script type="text/javascript" src="javascripts/parallax.min.js"></script>
-    <script type="text/javascript" src="javascripts/smoothscroll.js"></script>
-    <script type="text/javascript" src="javascripts/vertical-slider.js"></script>
-    <script type="text/javascript" src="javascripts/jquery.enllax.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.imageScroll.min.js"></script>
+
     <!-- Main Javascript -->
     <script type="text/javascript" src="javascripts/main.js"></script>
+        <script>
+        $('.img-holder').imageScroll({
+
+        });
+    </script>
 
 </body>
 </html>

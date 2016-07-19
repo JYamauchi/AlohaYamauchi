@@ -122,49 +122,56 @@
                 </div>
             </div>
         </div>
-        <div class='slide'><a href="#"></a>
+        <div class='slide' id="slide-portfolio"><a href="#"></a>
             <div class="section" id="section-portfolio">
                 <div class="section-portfolio-list">
                     <h2>List of my Web Development Projects</h2>
-                </div>
-                <section class="parallax">
-                
-                    <div class="parallax-1" data-enllax-ratio="0.5" data-enllax="horizontal">
-                        <h2>Geo-Pic</h2>
+                    <div class="row" id="row-portfolio">
+                        <div class="col-xs-12 col-md-8"> 
+                            <img src="http://www.alohayamauchi.com/images/portfolio/Geo-Pic-CP.png" class="portfolio-image">
+                        </div>
+                        <div class="col-xs-12 col-md-4" id="col-portfolio"> 
+                            <h2>Geo-Pic</h2>
+                            <section><a href='https://geo-pic.herokuapp.com/'>Geo-Pic Project Link</a><br>
+                                - Ruby on Rails project that allows users to search through a database of Flickr pictures by country or city to explore places they have never been.<br>
+                                - This website uses Flickr API to gather and display pictures. 
+                            </section>
+                        </div>
                     </div>
-                </section>
-                <h3>Geo-Pic</h3> 
-                <section><a href='https://geo-pic.herokuapp.com/'>Geo-Pic Project Link</a><br>
-                    - Ruby on Rails project that allows users to search through a database of Flickr pictures by country or city to explore places they have never been.<br>
-                    - This website uses Flickr API to gather and display pictures. 
-                </section>
-                <img src="http://www.alohayamauchi.com/images/portfolio/Restofy-CP.png" data-enllax-ratio=".5" data-enllax-type="foreground" data-enllax-direction="horizontal" />
-                 <h3>Restofy</h3>
-                <section><a href='http://restofy.herokuapp.com/'>Restofy Project Link</a>
-                    - Developed an application that allows users to browse through a database of restaurants in Washington, DC visualized on a map.<br>
-                    - This website uses MapBox API (similar to Google Map) to display the map of Washington, DC, while integrating with CSV formatted database (it was converted into XML). <br>
-                </section>
-                <article>  
-                    <img src="http://www.alohayamauchi.com/images/portfolio/DJ-Nicar-CP.png" alt="DJ Nicar's Webiste Cover Page" data-parallax='{"y" : 530}'/>
-                </article>
-                <h3>DJ Nicar’s Website</h3>
-                <section><a href='http://www.djnicar.com'>DJ Nicar</a>
-                    - Helped setting up the WordPress based website for my friend who is a professional DJ.<br>
-                    - He preferred using WordPress because he wanted to add blogs, pictures, and music clips on his website in the future. <br>
-                </section>
-                <article>  
-                    <img src="http://www.alohayamauchi.com/images/portfolio/GWADA-CP.png" alt="Greater Washington Asian Deaf Association Website Cover Page" data-parallax='{"y" : 530}'/>
-                </article>
-                <h3>Greater Washington Asian Deaf Association Website</h3> 
-                <section>http://gwada-dc.org/  
-                    - I volunteered to renovate the deaf non-profit organization’s website as I started working on it last week. This website is still under construction. 
-                </section>
+                    <div class="row" id="row-portfolio">
+                        <div class="col-xs-12 col-md-8">
+                            <img src="http://www.alohayamauchi.com/images/portfolio/Restofy-CP.png" class="portfolio-image">
+                        </div>
+                        <div class="col-xs-12 col-md-4" id="col-portfolio"> 
+                            <h3>Restofy</h3>
+                            <section><a href='http://restofy.herokuapp.com/'>Restofy Project Link</a>
+                                - Developed an application that allows users to browse through a database of restaurants in Washington, DC visualized on a map.<br>
+                                - This website uses MapBox API (similar to Google Map) to display the map of Washington, DC, while integrating with CSV formatted database (it was converted into XML). <br>
+                            </section>
+                        </div>
+                    </div>
+                    <article>  
+                        <img src="http://www.alohayamauchi.com/images/portfolio/DJ-Nicar-CP.png" alt="DJ Nicar's Webiste Cover Page" data-parallax='{"y" : 530}'/>
+                    </article>
+                    <h3>DJ Nicar’s Website</h3>
+                    <section><a href='http://www.djnicar.com'>DJ Nicar</a>
+                        - Helped setting up the WordPress based website for my friend who is a professional DJ.<br>
+                        - He preferred using WordPress because he wanted to add blogs, pictures, and music clips on his website in the future. <br>
+                    </section>
+                    <article>  
+                        <img src="http://www.alohayamauchi.com/images/portfolio/GWADA-CP.png" alt="Greater Washington Asian Deaf Association Website Cover Page" data-parallax='{"y" : 530}'/>
+                    </article>
+                    <h3>Greater Washington Asian Deaf Association Website</h3> 
+                    <section>http://gwada-dc.org/  
+                        - I volunteered to renovate the deaf non-profit organization’s website as I started working on it last week. This website is still under construction. 
+                    </section>
 
-                <h3>My Personal Website</h3> 
-                <section>http://alohayamauchi.com 
-                    - I just started developing on my personal website few weeks ago. 
-                    - This website is being written from scratch with only HTML, CSS, and JavaScript with JQuery codes. 
-                </section>
+                    <h3>My Personal Website</h3> 
+                    <section>http://alohayamauchi.com 
+                        - I just started developing on my personal website few weeks ago. 
+                        - This website is being written from scratch with only HTML, CSS, and JavaScript with JQuery codes. 
+                    </section>
+                </div>
             </div>
         </div>
         <div class='slide'><a href="#"></a>
@@ -177,7 +184,7 @@
             </div>
         </div>
         <div class='slide'>
-            <div class="section">
+            <div class="section" id="section-contact">
                 <div class='contact'>
                     <a name='#contact'></a>
                     <h2>Send Me a Message</h2>
@@ -189,7 +196,11 @@
                     </form>
                     </p>
                     <a href="http://www.alohayamauchi.com/php/resume.php"><i id="larger-icon" class="fa fa-file-text" aria-hidden="true"></i><br>Download Resume</a>
+                
                 </div>
+                <footer>
+                    Copyright Jared Yamauchi 2016
+                </footer>
             </div>
         </div>
     </div>
@@ -206,8 +217,6 @@
     <script type="text/javascript" src="javascripts/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="javascripts/jquery.fullPage.js"></script>
     <script type="text/javascript" src="node_modules/parallax-imagescroll/jquery.imageScroll.js"></script>
-    <script type="text/javascript" src="javascripts/jquery.enllax.min.js"></script>
-    <script type="text/javascript" src="javascripts/smoothscroll.js"></script>
     <!-- Main Javascript -->
     <script type="text/javascript" src="javascripts/main.js"></script>
 

@@ -111,11 +111,12 @@ section {
 	overflow: hidden;
 }
 
-#portfolio-div {
+/*.portfolio-div {
 	padding: 0 20px 50px 20px;
 	background: #BFF2AB;
 	overflow: hidden;
-}
+}*/
+
 /* Div for after the FullPage section */
 .section-div {
 	padding: auto;
@@ -176,21 +177,6 @@ section {
 	box-shadow: -0.3em 0.3em 1em #000;
 }
 
-#section-portfolio {
-
-}
-
-.contact {
-	text-align: center;
-}
-
-.img-holder {
-	height: 500px;
-	width: 100%;
-	position: relative;
-  -webkit-transform: translateZ(0);
-}
-
 .content {
 	margin: 0 1.5em;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -202,28 +188,26 @@ section {
 	text-align: center;
 }
 
+#section-portfolio {
+	font-size: 0.75em;
+}
+
+.section-portfolio-list {
+	padding: 0 4em;
+}
+
+#row-portfolio {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.portfolio-image {
+	width: 750px;
+	height: 400px;
+}
+
 #no_transition {
     transition: none !important;
-}
-
-.vs-section {
-	vertical-align: middle;
-	background-repeat: no-repeat;
-	background-position: center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-#vs-section-portfolio {
-	background: white;
-	overflow-x: scroll;
-}
-
-.parallax-1 {
-	background: url("http://www.alohayamauchi.com/images/portfolio/Geo-Pic-CP.png");
-	height: 15em;
 }
 
 .slide-div {
@@ -265,17 +249,21 @@ section {
 	margin: 0 200px;
 }
 
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
+#section-contact {
+	vertical-align: bottom;
+}
+
+.contact {
+	text-align: center;
 }
 
 footer {
-	bottom: 0;
+	position: absolute;
+	width: 100%;
 	color: #FFFFFF;
-	background: #004763;
+	bottom: 3.7em;
+	background: #298fb7;
 	text-align: center;
-	margin: 0 0 0 0;
 }
 /*   | RESPONSIVE CSS ONLY |   */
 /*  Small or Regular Phones  */
@@ -349,6 +337,14 @@ footer {
 		content:'';
 		opacity: 1;
 		-webkit-transition: all .7s ease;
+	}
+	footer {
+		position: absolute;
+		width: 100%;
+		color: #FFFFFF;
+		bottom: 5em;
+		background: #298fb7;
+		text-align: center;
 	}
 }
 /* Landscape */
@@ -520,7 +516,6 @@ footer {
 		-webkit-transition: all .7s ease;
 	}
 }
-
 /* Landscape */
 @media only screen 
   and (min-device-width: 768px) 
