@@ -45,20 +45,16 @@ $(document).ready(function () {
     focusOnSelect: true,
     variableWidth: true
   });
+  var scrollOptions = {click: false,  wheelStep: 20};
+if (Modernizr.touch) {
+    scrollOptions.click = true;
+}
   //FullPage JS produces a slide section for each full screen part
   $('#fullpage').fullpage({
     //Accessibility
     keyboardScrolling: true,
-    scrollOverflow: true
+    scrollOverflow: true,
+    scrollOverflowOptions: scrollOptions
   });
-
-  $('#demo-slider').verticalSlider({
-    afterInit: function( currentSection, sectionsNumber  ) { return true; }
-  });
-
-  $('.parallax-window').parallax({
-    imageSrc: 'http://www.alohayamauchi.com/images/portfolio/Restofy-CP.png',
-    speed: 0.2,
-    zIndex: 1
-  });
+  
 });

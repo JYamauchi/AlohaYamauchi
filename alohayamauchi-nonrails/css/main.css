@@ -74,6 +74,7 @@ h4 {
 a {
 	color: #004763;
 	text-decoration: none;
+	z-index: 100;
 }
 
 strong {
@@ -84,16 +85,6 @@ section {
 	font-size: 1.5em;
 	margin: 1em;
 }
-/* figure is for pictures on the Portfolio page */
-figure {
-	width: 750px;
-	height: 400px;
-	margin: 0;
-	padding: 0;
-	background: #fff;
-	overflow: hidden;
-}
-
 /* Main "body" for each slider page */
 .fp-tableCell {
 	background-image: url("http://alohayamauchi.com/images/background/triangles-pattern.jpg");
@@ -144,7 +135,7 @@ figure {
 	background-image: url("http://www.alohayamauchi.com/images/background/AlohaYamauchi-JumboTron-Lanikai.png");
 	background-size: 100%;
 	color: #fff;
-		text-align: center;
+	text-align: center;
 	vertical-align: middle;
 }
 
@@ -155,7 +146,6 @@ figure {
 	font-size: 2em;
 	border-top: 0.1em solid #298fb7;
 	border-bottom: 0.1em solid #298fb7;
-
 }
 
 .jumboTron-box h2 {
@@ -198,59 +188,80 @@ figure {
 	text-align: center;
 }
 
-#section-portfolio {
+.container-portfolio {
+	padding: 0 5em 8em;
 	font-size: 0.75em;
 }
 
-.section-portfolio-list {
-	padding: 0 4em;
-}
-
 #row-portfolio {
-	padding-top: 2em;
-	padding-bottom: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
+.portfolio-image-div {
+    position: relative;
+    width: 750px;
+	height: 400px;
+    overflow: hidden;
+    /* Only the -webkit- prefix is required these days */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+}
+
+.portfolio-image-div::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    transition: background .35s ease-out;
+}
+
+.portfolio-image-div:hover::before {
+    background: rgba(0, 0, 0, .5);
+}
+/*Adjust the size for portfolio images*/
 .portfolio-image {
+	display: block;
 	width: 750px;
 	height: 400px;
 }
 
-.portfolio-image-div {
-	font-size: 2em;
+.caption-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+
+    transition: -webkit-transform .35s ease-out;
+    transition:         transform .35s ease-out;
 }
 
-.portfolio-image-div img {
-	width:100%;
-	vertical-align: top;	
+.portfolio-image-div:hover .caption-overlay {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
 }
 
-.portfolio-image-div:after, .portfolio-image-div:before {
-    position:absolute;
-    opacity:0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-.portfolio-image-div:after {
-    content:'\A';
-    width:100%; height:100%;
-    top:0; left:0;
-    background:#298fb7;
+.caption-overlay-title {
+    -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
+            transform: translateY( calc(-100% - 10px) );
+
+    transition: -webkit-transform .35s ease-out;
+    transition:         transform .35s ease-out;
 }
 
-.portfolio-image-div:before {
-    content: attr(data-content);
-    width:100%;
-    color:#fff;
-    z-index:1;
-    padding:100px 35px;
-    text-align:center;
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
-}
-
-.portfolio-image-div:hover:after, .portfolio-image-div:hover:before {
-	opacity: .8;
+.portfolio-image-div:hover .caption-overlay-title {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
 }
 
 #no_transition {
