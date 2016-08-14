@@ -56,7 +56,7 @@ h2 {
 	margin: 0.5em 0;
 	font-family: 'Open Sans Condensed', italic;
 	font-weight: 300, italic;
-	font-size: 2.0em;
+	font-size: 2.5em;
 	text-align: center;
 }
 /* H3 is for each slide's section's title  */
@@ -104,6 +104,11 @@ section {
 	width: 1.2em;
 	font-size: 3em;
 	text-align: center;
+}
+
+#social-icons {
+	margin: 0 20px;
+	font-size: 4em;
 }
 
 #resume-div {
@@ -190,7 +195,7 @@ section {
 
 .container-portfolio {
 	padding: 0 5em 8em;
-	font-size: 0.75em;
+	/*font-size: 0.75em;*/
 }
 
 #row-portfolio {
@@ -221,7 +226,7 @@ section {
 }
 
 .portfolio-image-div:hover::before {
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .8);
 }
 /*Adjust the size for portfolio images*/
 .portfolio-image {
@@ -240,7 +245,7 @@ section {
     color: white;
 
     -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    		transform: translateY(100%);
 
     transition: -webkit-transform .35s ease-out;
     transition:         transform .35s ease-out;
@@ -252,8 +257,8 @@ section {
 }
 
 .caption-overlay-title {
-    -webkit-transform: translateY( -webkit-calc(-100% - 10px) );
-            transform: translateY( calc(-100% - 10px) );
+    -webkit-transform: translateY( -webkit-calc(-100% - 50px) );
+            transform: translateY( calc(-100% - 50px) );
 
     transition: -webkit-transform .35s ease-out;
     transition:         transform .35s ease-out;
@@ -305,6 +310,10 @@ section {
 .skills-slider {
 	max-width: 800px;
 	margin: 0 200px;
+}
+
+.section-blog {
+	padding: 0 20px 50px;
 }
 
 #section-contact {
@@ -374,7 +383,22 @@ footer {
 		top: 3em;
 		margin: 0 10%;
 		width: 18em;
-	}	
+	}
+
+	.container-portfolio {
+		padding: 1em 3em;
+	}
+
+	.portfolio-image-div {
+		width: 320px;
+		height: 200px;
+	}
+
+	.portfolio-image {
+		display: block;
+		width: 320px;
+		height: 200px;
+	}
 
 	.slick-slide h1 {
 		margin: 0 25px;
