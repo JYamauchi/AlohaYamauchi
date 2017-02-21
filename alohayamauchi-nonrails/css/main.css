@@ -133,6 +133,11 @@ section {
 	vertical-align: middle;
 }
 
+.skills-list {
+	list-style:none;
+	text-align: center;
+}
+
 #section-div-jared{
 	padding: auto;
 	width: 100%;
@@ -193,8 +198,12 @@ section {
 	text-align: center;
 }
 
+#career-section {
+	background-color: white;
+}
+
 .container-portfolio {
-	padding: 0 5em 8em;
+	padding-bottom: 5em;
 	/*font-size: 0.75em;*/
 }
 
@@ -205,13 +214,14 @@ section {
 
 .portfolio-image-div {
     position: relative;
+    display: block;
     width: 750px;
 	height: 400px;
     overflow: hidden;
     /* Only the -webkit- prefix is required these days */
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
-
+    margin: 0 auto;
 }
 
 .portfolio-image-div::before {
@@ -230,7 +240,6 @@ section {
 }
 /*Adjust the size for portfolio images*/
 .portfolio-image {
-	display: block;
 	width: 750px;
 	height: 400px;
 }
