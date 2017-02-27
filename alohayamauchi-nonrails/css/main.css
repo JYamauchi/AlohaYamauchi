@@ -53,7 +53,7 @@ h1 {
 }
 /* H2 is for each slide's title */
 h2 {
-	margin: 0.5em 0;
+	margin: 0.2em 0;
 	font-family: 'Open Sans Condensed', italic;
 	font-weight: 300, italic;
 	font-size: 2.5em;
@@ -61,7 +61,7 @@ h2 {
 }
 /* H3 is for each slide's section's title  */
 h3 {
-	margin: 1em 0;
+	margin: 0.2em 0;
 	font-family: 'Open Sans Condensed', italic;
 	font-weight: 300, italic;
 	font-size: 2em;
@@ -69,6 +69,10 @@ h3 {
 
 h4 {
 	font-size: 1.5em;
+}
+
+ul {
+	padding-left: 0;
 }
 
 a {
@@ -95,13 +99,19 @@ section {
 	height: 600px;
 	overflow-y: scroll;
 }
+
+#career-column {
+	padding-right: 0 !important;
+	padding-left: 0;
+}
+
+.icon-bg {
+	padding: 10px 0;
+	// background-color: teal;
+}
+
 /* Increase the icons' size and customize */
 #larger-icon {
-	background-color: teal;
-	border: 2px solid #005055;
-	border-radius: 50%;
-	height: 1.2em;
-	width: 1.2em;
 	font-size: 3em;
 	text-align: center;
 }
@@ -136,6 +146,7 @@ section {
 .skills-list {
 	list-style:none;
 	text-align: center;
+	font-size: 1.2em !important;
 }
 
 #section-div-jared{
@@ -320,6 +331,10 @@ section {
 	margin: 0 200px;
 }
 
+.slider-img {
+	width: 100%;
+}
+
 .section-blog {
 	padding: 0 20px 50px;
 }
@@ -365,9 +380,14 @@ footer {
 	}
 
 	h2 {
-		font-size: 1.0em;
+		font-size: 1.2em;
 		text-align: center;
 	}
+
+	h3 {
+		font-size: 1.0em;
+	}
+
     section {
     	font-size: 0.75em;
     }
@@ -406,6 +426,10 @@ footer {
 		display: block;
 		width: 320px;
 		height: 200px;
+	}
+
+	.skills-list {
+		font-size: 1em !important;
 	}
 
 	.slick-slide h1 {
