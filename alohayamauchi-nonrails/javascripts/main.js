@@ -57,4 +57,8 @@ if (Modernizr.touch) {
     scrollOverflowOptions: scrollOptions
   });
   
+  var button = document.createElement("Button");
+    button.innerHTML = "Title";
+    button.style = "margin-top:0%;right:0%;position:absolute;"
+    document.body.appendChild(button);
 });
