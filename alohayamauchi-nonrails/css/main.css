@@ -36,6 +36,7 @@ body {
 	color: #004763;
 }
 header {
+	position: relative;
 	background: #298fb7;
 }
 nav {
@@ -93,6 +94,13 @@ section {
 .fp-tableCell {
 	background-image: url("http://alohayamauchi.com/images/background/triangles-pattern.jpg");
 	background-repeat: repeat;
+}
+
+.jy-logo {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	width: 50px;
 }
 
 .section2 {
