@@ -92,15 +92,49 @@ section {
 }
 /* Main "body" for each slider page */
 .fp-tableCell {
-	background-image: url("http://alohayamauchi.com/images/background/triangles-pattern.jpg");
-	background-repeat: repeat;
+	display: hidden;
+	// background-image: url("http://alohayamauchi.com/images/background/triangles-pattern.jpg");
+	// background-repeat: repeat;
 }
 
-.jy-logo {
-	position: absolute;
-	top: 15px;
-	left: 20px;
-	width: 50px;
+#jy-logo-div {
+	background-color: #222222;
+  	background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+	text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+ 	transition: all 0.5s;
+}
+
+#jy-logo-svg {
+	width: 500px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.jy-logo-path {
+	fill: #fff;
+	font-family: Monoton;
+    -webkit-animation: jy-logo-anim 1.5s ease-in-out infinite alternate;
+    -moz-animation: jy-logo-anim 1.5s ease-in-out infinite alternate;
+    animation: jy-logo-anim 1.5s ease-in-out infinite alternate;
+}
+
+.jy-logo-path:hover {
+	fill: #FF1177;
+    -webkit-animation: none;
+    -moz-animation: none;
+	animation: none;
+}
+
+@-webkit-keyframes jy-logo-anim {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
 }
 
 .section2 {
