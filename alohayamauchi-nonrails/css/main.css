@@ -97,28 +97,42 @@ section {
 	// background-repeat: repeat;
 }
 
-#jy-logo-div {
+#jy-logo-bg {
 	background-color: #222222;
   	background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
-	text-decoration: none;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
- 	transition: all 0.5s;
+}
+
+.jy-logo-container {
+	position: relative;
+}
+
+#jy-ufo-svg {
+	// position: relative;
+	height: 550px;
+	// margin: 20px auto;
 }
 
 #jy-logo-svg {
-	width: 500px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+	position: absolute;
+	top: 10px;
+	left: 475px;
+	width: 300px;
+}
+
+.jy-logo-div {
+	margin: 0 auto;
+	-webkit-filter: drop-shadow(0px 0px 10px #fff);
+	filter: box-shadow(0px 0px 10px #fff);
+    -webkit-animation: jy-logo-anim 1s linear infinite alternate;
+    -moz-animation: jy-logo-anim 1s linear infinite alternate;
+    animation: jy-logo-anim 1s linear infinite alternate;
 }
 
 .jy-logo-path {
-	fill: #fff;
-	font-family: Monoton;
-    -webkit-animation: jy-logo-anim 1.5s ease-in-out infinite alternate;
-    -moz-animation: jy-logo-anim 1.5s ease-in-out infinite alternate;
-    animation: jy-logo-anim 1.5s ease-in-out infinite alternate;
+	fill: #298fb7;
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .jy-logo-path:hover {
@@ -130,10 +144,28 @@ section {
 
 @-webkit-keyframes jy-logo-anim {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+    -webkit-filter: drop-shadow(0 0 10px #fff);
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+    -webkit-filter: drop-shadow(0 0 10px #004763);
+  }
+}
+
+@-moz-keyframes jy-logo-anim {
+  from {
+    -moz-filter: drop-shadow(0 0 10px #fff);
+  }
+  to {
+    -moz-filter: drop-shadow(0 0 10px #004763);
+  }
+}
+
+@keyframes jy-logo-anim {
+  from {
+    filter: drop-shadow(0 0 10px #fff);
+  }
+  to {
+    filter: drop-shadow(0 0 10px #004763);
   }
 }
 

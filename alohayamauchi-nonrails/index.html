@@ -15,6 +15,7 @@
 
     <script src="https://use.fontawesome.com/50c8b61851.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
 </head>    
 <body>
     <header>
@@ -98,11 +99,27 @@
                     </div>
                 </div>
                 <div class="section" id="section3">
-                    <div class="section-div" id="jy-logo-div">
+                    <div class="section-div" id="jy-logo-bg">
                         <div class="row">
-                            <svg version="1.1" id="jy-logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="600px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
-                                <path class="jy-logo-path" fill="#000" d="M386.101,41.684L493.85,149.432v586.621l-107.749-107.75V41.684z M340.72,759.576h153.13L196.958,462.684 H43.829L340.72,759.576z M762.172,194.739V41.444L511.547,292.678V444.45L762.172,194.739z"/>
-                            </svg>
+                            <div class="jy-logo-container">
+                                <div class="jy-ufo-div" id="jy-ufo-div">
+                                    <svg version="1.1" id="jy-ufo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="800px" height="800px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
+                                    <path class="jy-ufo-path" fill="none" stroke="#fff" d="M780.764,400c0,210.29-170.475,380.764-380.764,380.764S19.237,610.289,19.237,400
+                                        S189.71,19.237,400,19.237S780.764,189.71,780.764,400z M400,61.342C212.964,61.342,61.342,212.964,61.342,400
+                                        c0,187.034,151.622,338.658,338.658,338.658c187.035,0,338.658-151.624,338.658-338.658C738.658,212.964,587.035,61.342,400,61.342z
+                                        "/>
+                                    </path>
+                                    </svg>
+                                </div>
+
+                                <div class="jy-logo-div">
+                                    <svg version="1.1" id="jy-logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="600px" viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
+                                        <path class="jy-logo-path" fill="#000" d="M386.101,41.684L493.85,149.432v586.621l-107.749-107.75V41.684z M340.72,759.576h153.13L196.958,462.684 H43.829L340.72,759.576z M762.172,194.739V41.444L511.547,292.678V444.45L762.172,194.739z"/>
+                                        </path>
+                                    </svg>
+                                <!-- <img class="jy-logo-path" src="http://alohayamauchi.com/images/JY%20Logo%20v1.svg"> -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -129,8 +146,9 @@
                                 <div class="caption-overlay">
                                     <h1 class="caption-overlay-title">Geo-Pic</h1>
                                     <p class="caption-overlay-content">
-                                        - Ruby on Rails project that allows users to search through a database of Flickr pictures by country or city to explore places they have never been.<br>
-                                        - This website uses Flickr API to gather and display pictures. 
+                                        DEVELOPED IN RUBY ON RAILS<br>
+                                        - This project allows users to search through the database of the Flickr's pictures by country or city to explore places they have never been.<br>
+                                        - It uses the Flickr's API to gather and display pictures. 
                                         <h3>Click here to view this project!</h3>
                                     </p>
                                 </div>
@@ -144,6 +162,7 @@
                                 <div class="caption-overlay">
                                     <h1 class="caption-overlay-title">Restofy</h1>
                                     <p class="caption-overlay-content">
+                                        DEVELOPED IN RUBY ON RAILS</br>
                                         - Developed an application that allows users to browse through a database of restaurants in Washington, DC visualized on a map.<br>
                                         - This website uses MapBox API (similar to Google Map) to display the map of Washington, DC, while integrating with CSV formatted database (it was converted into XML). 
                                         <h3>Click here to view this project!</h3>
@@ -160,8 +179,9 @@
                                 <div class="caption-overlay">
                                     <h1 class="caption-overlay-title">DJ Nicar</h1>
                                     <p class="caption-overlay-content">
-                                        - Helped setting up the WordPress based website for my friend who is a professional DJ.<br>
-                                        - He preferred using WordPress because he wanted to add blogs, pictures, and music clips on his website in the future. 
+                                        DEVELOPED IN WORDPRESS<br>
+                                        - Helped my friend's starting-up business by developed his personal website.<br>
+                                        - My friend, who is professional DJ, preferred using WordPress so that he can update his website himself. 
                                         <h3>Click here to view this project!</h3>
                                     </p>
                                 </div>
@@ -238,6 +258,8 @@
     <script type="text/javascript" src="javascripts/velocity.min.js"></script>
     <script type="text/javascript" src="javascripts/velocity.ui.min.js"></script>
     <script type="text/javascript" src="javascripts/slick.min.js"></script>
+    <script type="text/javascript" src="javascripts/cssParser.js"></script>
+    <script type="text/javascript" src="javascripts/css-filters-polyfill-parser.js"></script>
  
     <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
     <script type="text/javascript" src="javascripts/scrolloverflow.min.js"></script>

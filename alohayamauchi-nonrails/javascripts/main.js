@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   //For Navigation Menu
   var nav = $('header');
   var navLi = $('nav');
@@ -46,7 +47,7 @@ $(document).ready(function () {
     variableWidth: true
   });
   var scrollOptions = {click: false,  wheelStep: 20};
-if (Modernizr.touch) {
+  if (Modernizr.touch) {
     scrollOptions.click = true;
 }
   //FullPage JS produces a slide section for each full screen part
@@ -61,4 +62,9 @@ if (Modernizr.touch) {
     button.innerHTML = "Title";
     button.style = "margin-top:0%;right:0%;position:absolute;"
     document.body.appendChild(button);
+
+  var polyfilter_scriptpath = 'http://www.alohayamauchi.com/javascripts/';
+  // var polyfilter_skip_stylesheets = true;  
+  $('.jy-logo-div1').css('polyfilter','drop-shadow(0px 0px 10px #fff);');
+
 });
