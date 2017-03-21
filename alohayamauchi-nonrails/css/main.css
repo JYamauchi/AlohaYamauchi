@@ -76,6 +76,10 @@ ul {
 	padding-left: 0;
 }
 
+li {
+	list-style:none;
+}
+
 a {
 	color: #004763;
 	text-decoration: none;
@@ -93,8 +97,6 @@ section {
 /* Main "body" for each slider page */
 .fp-tableCell {
 	display: hidden;
-	// background-image: url("http://alohayamauchi.com/images/background/triangles-pattern.jpg");
-	// background-repeat: repeat;
 }
 
 #jy-logo-bg {
@@ -103,40 +105,55 @@ section {
 }
 
 .jy-logo-container {
-	position: relative;
+	height: 100%;
+	overflow-y: scroll;
+	// position: relative;
+}
+
+.jy-ufo-div {
+	position: absolute;
+	top: 30px;
+	left: 250px;
+	-webkit-filter: drop-shadow(0px 0px 5px #298fb7);
+	filter: drop-shadow(0px 0px 5px #298fb7);
 }
 
 #jy-ufo-svg {
-	// position: relative;
-	height: 550px;
-	// margin: 20px auto;
+	height: 500px;
+	-webkit-filter: drop-shadow(0px 0px 10px #298fb7);
+	filter: drop-shadow(0px 0px 10px #298fb7);
 }
 
-#jy-logo-svg {
-	position: absolute;
-	top: 10px;
-	left: 475px;
-	width: 300px;
+.jy-ufo-path {
+	stroke: #fff;
 }
 
 .jy-logo-div {
-	margin: 0 auto;
-	-webkit-filter: drop-shadow(0px 0px 10px #fff);
-	filter: box-shadow(0px 0px 10px #fff);
-    -webkit-animation: jy-logo-anim 1s linear infinite alternate;
+	position: relative;
+    // -webkit-animation: jy-logo-anim 1s linear infinite alternate;
+    // -moz-animation: jy-logo-anim 1s linear infinite alternate;
+    // animation: jy-logo-anim 1s linear infinite alternate;
+}
+
+#jy-logo-svg {
+	top: 10px;
+	left: 575px;
+	width: 300px;
+	-webkit-animation: jy-logo-anim 1s linear infinite alternate;
     -moz-animation: jy-logo-anim 1s linear infinite alternate;
     animation: jy-logo-anim 1s linear infinite alternate;
 }
 
 .jy-logo-path {
-	fill: #298fb7;
+	stroke: #fff;
+	stroke-width: 10;
 	-webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 .jy-logo-path:hover {
-	fill: #FF1177;
+
     -webkit-animation: none;
     -moz-animation: none;
 	animation: none;
@@ -144,28 +161,28 @@ section {
 
 @-webkit-keyframes jy-logo-anim {
   from {
-    -webkit-filter: drop-shadow(0 0 10px #fff);
+    -webkit-filter: drop-shadow(0 0 30px #298fb7);
   }
   to {
-    -webkit-filter: drop-shadow(0 0 10px #004763);
+    -webkit-filter: drop-shadow(0 0 30px #004763);
   }
 }
 
 @-moz-keyframes jy-logo-anim {
   from {
-    -moz-filter: drop-shadow(0 0 10px #fff);
+    -moz-filter: drop-shadow(30 30 30px #298fb7);
   }
   to {
-    -moz-filter: drop-shadow(0 0 10px #004763);
+    -moz-filter: drop-shadow(0 30 30px #004763);
   }
 }
 
 @keyframes jy-logo-anim {
   from {
-    filter: drop-shadow(0 0 10px #fff);
+    filter: drop-shadow(0 0 10px #298fb7);
   }
   to {
-    filter: drop-shadow(0 0 10px #004763);
+    filter: drop-shadow(0 0 10px #fff);
   }
 }
 
@@ -201,12 +218,6 @@ section {
 	overflow: hidden;
 }
 
-/*.portfolio-div {
-	padding: 0 20px 50px 20px;
-	background: #BFF2AB;
-	overflow: hidden;
-}*/
-
 /* Div for after the FullPage section */
 .section-div {
 	padding: auto;
@@ -217,13 +228,17 @@ section {
 	vertical-align: middle;
 }
 
+#section-div-intro {
+	background-color: black;
+}
+
 .skills-list {
 	list-style:none;
 	text-align: center;
-	font-size: 1.2em !important;
+	font-size: 1.5em;
 }
 
-#section-div-jared{
+#section-div-jared {
 	padding: auto;
 	width: 100%;
 	height: 100%;
@@ -243,6 +258,13 @@ section {
 	border-bottom: 0.1em solid #298fb7;
 }
 
+.jumboTron-box2 {
+	padding-bottom: 0.5em;
+	background-color:rgba(0, 0, 0, 0.5);
+	border-top: 0.1em solid #298fb7;
+	border-bottom: 0.1em solid #298fb7;
+}
+
 .jumboTron-box h2 {
 	margin: 0.2em;
 }
@@ -258,14 +280,12 @@ section {
 	text-align: right;
 }
 
-.myself-pic {
+.contact-myself-pic {
 	position: relative;
 	float: left;
-	left: 5em;
-	top: 5em;
+	left: 3em;
 	width: 15em;
 	border-radius: 10em;
-/*	border: 0.1em solid #fff;*/
 	display: block;
 	text-align: center;
 	margin: 2em;
@@ -284,6 +304,7 @@ section {
 }
 
 #career-section {
+	font-size: 1.6em;
 	background-color: white;
 }
 
@@ -360,6 +381,10 @@ section {
 .portfolio-image-div:hover .caption-overlay-title {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+}
+
+.caption-overlay-content {
+   font-size: 1.4em;
 }
 
 #no_transition {
@@ -465,6 +490,8 @@ footer {
     section {
     	font-size: 0.75em;
     }
+
+
 
     #section-div-jared{
 		background-image: url("http://www.alohayamauchi.com/images/background/AlohaYamauchi-JumboTron-Lanikai.png");
@@ -610,6 +637,7 @@ footer {
 		font-size: 1.0em;
 		text-align: center;
 	}
+
     section {
     	font-size: 0.75em;
     }
