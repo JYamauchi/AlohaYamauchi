@@ -55,7 +55,8 @@ $(document).ready(function () {
     //Accessibility
     keyboardScrolling: true,
     scrollOverflow: true,
-    scrollOverflowOptions: scrollOptions
+    scrollOverflowOptions: scrollOptions,
+    continuousVertical: true
   });
   
   var button = document.createElement("Button");

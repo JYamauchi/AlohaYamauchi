@@ -249,18 +249,18 @@ section {
 	vertical-align: middle;
 }
 
+#section-div-personal {
+	background-color: #298fb7;
+	font-size: 2em;
+	color: #fff;
+}
+
 .jumboTron-box {
 	margin-top: 4em;
+	width: 100%;
 	padding-bottom: 0.5em;
 	background-color:rgba(0, 0, 0, 0.5);
 	font-size: 2em;
-	border-top: 0.1em solid #298fb7;
-	border-bottom: 0.1em solid #298fb7;
-}
-
-.jumboTron-box2 {
-	padding-bottom: 0.5em;
-	background-color:rgba(0, 0, 0, 0.5);
 	border-top: 0.1em solid #298fb7;
 	border-bottom: 0.1em solid #298fb7;
 }
@@ -305,7 +305,6 @@ section {
 
 #career-section {
 	font-size: 1.6em;
-	background-color: white;
 }
 
 .container-portfolio {
