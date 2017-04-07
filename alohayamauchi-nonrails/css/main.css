@@ -99,46 +99,35 @@ section {
 	display: hidden;
 }
 
-#jy-logo-bg {
-	background-color: #222222;
-  	background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
-}
-
 .jy-logo-container {
-	height: 100%;
-	overflow-y: scroll;
 	// position: relative;
+	display: block;
 }
 
 .jy-ufo-div {
-	position: absolute;
-	top: 30px;
-	left: 250px;
 	-webkit-filter: drop-shadow(0px 0px 5px #298fb7);
 	filter: drop-shadow(0px 0px 5px #298fb7);
 }
 
+.jy-logo-div {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+}
+
 #jy-ufo-svg {
-	height: 500px;
+	height: 550px;
 	-webkit-filter: drop-shadow(0px 0px 10px #298fb7);
 	filter: drop-shadow(0px 0px 10px #298fb7);
 }
 
 .jy-ufo-path {
 	stroke: #fff;
-}
-
-.jy-logo-div {
-	position: relative;
-    // -webkit-animation: jy-logo-anim 1s linear infinite alternate;
-    // -moz-animation: jy-logo-anim 1s linear infinite alternate;
-    // animation: jy-logo-anim 1s linear infinite alternate;
+	opacity: 0.5;
 }
 
 #jy-logo-svg {
-	top: 10px;
-	left: 575px;
-	width: 300px;
+	max-width: 360px;
 	-webkit-animation: jy-logo-anim 1s linear infinite alternate;
     -moz-animation: jy-logo-anim 1s linear infinite alternate;
     animation: jy-logo-anim 1s linear infinite alternate;
@@ -146,6 +135,7 @@ section {
 
 .jy-logo-path {
 	stroke: #fff;
+	transform-origin: 50% 50%;
 	stroke-width: 10;
 	-webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -153,37 +143,24 @@ section {
 }
 
 .jy-logo-path:hover {
-
     -webkit-animation: none;
     -moz-animation: none;
 	animation: none;
 }
 
 @-webkit-keyframes jy-logo-anim {
-  from {
-    -webkit-filter: drop-shadow(0 0 30px #298fb7);
-  }
-  to {
-    -webkit-filter: drop-shadow(0 0 30px #004763);
-  }
+  from {-webkit-filter: drop-shadow(0 0 30px #298fb7);}
+  to {-webkit-filter: drop-shadow(0 0 30px #004763);}
 }
 
 @-moz-keyframes jy-logo-anim {
-  from {
-    -moz-filter: drop-shadow(30 30 30px #298fb7);
-  }
-  to {
-    -moz-filter: drop-shadow(0 30 30px #004763);
-  }
+  from {-moz-filter: drop-shadow(30 30 30px #298fb7);}
+  to {-moz-filter: drop-shadow(0 30 30px #004763);}
 }
 
 @keyframes jy-logo-anim {
-  from {
-    filter: drop-shadow(0 0 10px #298fb7);
-  }
-  to {
-    filter: drop-shadow(0 0 10px #fff);
-  }
+  from {filter: drop-shadow(0 0 10px #298fb7);}
+  to {filter: drop-shadow(0 0 10px #fff);}
 }
 
 .section2 {
@@ -228,8 +205,9 @@ section {
 	vertical-align: middle;
 }
 
-#section-div-intro {
+#section1 {
 	background-color: black;
+	height: 100%;
 }
 
 .skills-list {
@@ -490,7 +468,22 @@ footer {
     	font-size: 0.75em;
     }
 
+    .jy-logo-container {
 
+	}
+    .jy-ufo-div {
+		//left: 170px;
+	}
+
+    #jy-logo-svg {
+		// top: 10px;
+		// left: 575px;
+		width: 200px;
+	}
+
+	#jy-ufo-svg {
+		height: 200px;
+	}
 
     #section-div-jared{
 		background-image: url("http://www.alohayamauchi.com/images/background/AlohaYamauchi-JumboTron-Lanikai.png");
@@ -591,6 +584,10 @@ footer {
     	font-size: 0.75em;
     }
 
+    #jy-ufo-svg {
+		height: 200px;
+	}
+
 	.slick-slide h1 {
 		margin: 0 20px;
 		font-size: 2.5em;
@@ -640,6 +637,10 @@ footer {
     section {
     	font-size: 0.75em;
     }
+
+    #jy-ufo-svg {
+		height: 200px;
+	}
 
 	.slick-slide h1 {
 		margin: 0 50px;
