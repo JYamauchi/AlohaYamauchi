@@ -60,69 +60,72 @@ $(document).ready(function () {
     continuousVertical: true
   });
 
-  $(".jy-ufo-div")
-    .velocity("fadeIn", { duration: 3500 });
+  // $(".jy-ufo-div")
+  //   .velocity("fadeIn", { duration: 3500 });
 
   $(".jy-ufo-path")
-    .delay(500)
-    .velocity({ strokeRed: 0, strokeGreen: 0, strokeBlue: 0, opacity: 1, strokeWidth: 2 })
-    // .velocity({ fillRed: 0, fillGreen: 255, fillBlue: 0, opacity: 1})
-    .delay(1000)
-    .velocity({ strokeRed: 255, strokeGreen: 255, strokeBlue: 255, opacity: 1, strokeWidth: 10 })
-    .velocity({ fillRed: 255, fillGreen: 255, fillBlue: 255, opacity: 1});
+    .delay(2000)
+    .velocity({ strokeRed: 255, strokeGreen: 255, strokeBlue: 255, opacity: 1, strokeWidth: 2 })
+    .delay(2000)
+    .velocity({ fillRed: 255, fillGreen: 255, fillBlue: 255, opacity: 1}, {duration: 1000});
+  
+  // ufoSpinPath
+  //   .delay(1000)
+  //   .velocity({ scale: 0.9, fillRed: 0, fillGreen: 0, fillBlue: 0, opacity: 0})
+  //   .velocity({ scale: 1, fillRed: 255, fillGreen: 255, fillBlue: 255, opacity: 1});
 
-    $(".jy-ufo-spin-path")
-    .delay(1000)
-    .velocity({ scale: 0.9, fillRed: 0, fillGreen: 0, fillBlue: 0, opacity: 0})
-    .delay(1000)
-    .velocity({ scale: 1, fillRed: 255, fillGreen: 255, fillBlue: 255, opacity: 1});
-
+  var ufoSVG = $(".jy-ufo-div")[0];
   var logoSVG = $("#jy-logo-svg")[0];
-  var ufoSVG = $("#jy-ufo-svg")[0];
+  var doubleRings = $("#jy-double-rings-svg")[0];
+  var outerRing = $("#jy-outer-ring-svg")[0];
+  var innerRing = $("#jy-inner-ring-svg")[0];
 
+  TweenMax.to(doubleRings, .3, {glowFilter:{color:0xffffff, alpha:1, blurX:30, blurY:30}, paused:true});
+
+  TweenMax.to([logoSVG, doubleRings, ufoSVG, outerRing, innerRing], 0, {
+    transformOrigin: "50% 50%"
+  });
+
+  TweenMax.to([logoSVG, outerRing, innerRing, doubleRings], 0, {
+    left: "50%", top: "50%",
+    xPercent: "-50", yPercent: "0"
+  });
   createAnimation(logoSVG);
 
   function createAnimation(element) {
     var isPlaying = false;
-    var ufoSpin = $(".jy-ufo-spin-path")[0];
-    var ufoSpinScale = TweenMax.to(ufoSpin, 1, {
-      transformOrigin: "50% 50%",
-      scale: 0.98,
-      paused: true
-    }).timeScale(0);
-
-    var rotateCD = TweenMax.to(ufoSVG, 0.3, {
+    var rotateCD = TweenMax.to(outerRing, 0.3, {
       rotation: 360, 
       ease: Power0.easeNone,
       repeat: -1,
       paused: true
-    })
-    .timeScale(0);
+    }).timeScale(0);
+
+    var rotateCD2 = TweenMax.to(innerRing, 0.3, {
+      rotation: -360, 
+      ease: Power0.easeNone,
+      repeat: -1,
+      paused: true
+    }).timeScale(0);
       
     element.addEventListener("mouseover", toggleOn);
-    element.addEventListener("mouseout", toggleOff)
+    element.addEventListener("mouseout", toggleOff);
     
     function toggleOn() {      
         isPlaying = true;
-        rotateCD.play();
-        TweenMax.to(rotateCD, 2, { timeScale: 1 });
-        ufoSpinScale.play();
-        TweenMax.to(ufoSpinScale, 2, { timeScale: 1});
+        rotateCD.play(); rotateCD2.play();
+        TweenMax.to([rotateCD, rotateCD2], 2, { timeScale: 1 });
+        //ufoSpinPath.velocity({ scale: 1, fillRed: 255, fillGreen: 255, fillBlue:255, opacity: 1});
     }
 
     function toggleOff() {
       isPlaying = false;            
-      TweenMax.to(rotateCD, 2, { 
+      TweenMax.to([rotateCD, rotateCD2], 2, { 
         timeScale: 0, 
         onComplete: rotateCD.pause, 
         callbackScope: rotateCD 
       });
-      TweenMax.to(ufoSpinScale, 2, {
-        scale: 0.9
-        //timeScale: 1,
-        // onComplete: ufoSpinScale.pause,
-        //callbackScope: ufoSpinScale
-      })
+      //ufoSpinPath.velocity({ scale: 0.95, fillRed: 0, fillGreen: 0, fillBlue: 0, opacity: 0});
     }
   }
   
@@ -132,7 +135,7 @@ $(document).ready(function () {
     document.body.appendChild(button);
 
   var polyfilter_scriptpath = 'http://www.alohayamauchi.com/javascripts/';
-  // var polyfilter_skip_stylesheets = true;  
+
   $('.jy-logo-div1').css('polyfilter','drop-shadow(0px 0px 10px #fff);');
 
 });

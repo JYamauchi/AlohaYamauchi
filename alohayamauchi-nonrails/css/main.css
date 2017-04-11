@@ -99,69 +99,76 @@ section {
 	display: hidden;
 }
 
-.jy-logo-container {
-	// position: relative;
-	display: block;
+#section1 {
+	position: relative;
+	background-color: black;
+	height: 100%;
 }
 
 .jy-ufo-div {
-	-webkit-filter: drop-shadow(0px 0px 5px #298fb7);
-	filter: drop-shadow(0px 0px 5px #298fb7);
+	display: block;
+	// -webkit-filter: drop-shadow(0px 0px 5px #298fb7);
+	// filter: drop-shadow(0px 0px 5px #298fb7);
 }
 
-.jy-logo-div {
+#jy-logo-svg, #jy-inner-ring-svg, #jy-outer-ring-svg, #jy-double-rings-svg {
 	position: absolute;
-	top: 20%;
-	left: 50%;
-}
-
-#jy-ufo-svg {
-	height: 550px;
+	height: 600px;
 	-webkit-filter: drop-shadow(0px 0px 10px #298fb7);
 	filter: drop-shadow(0px 0px 10px #298fb7);
 }
 
-.jy-ufo-path {
+.jy-double-rings, .jy-outer-ring, .jy-inner-ring, .jy-logo-path {
+	stroke:#fff;
+	stroke-width: 2;
+}
+
+.jy-outer-ring {
 	stroke: #fff;
 	opacity: 0.5;
 }
 
 #jy-logo-svg {
-	max-width: 360px;
-	-webkit-animation: jy-logo-anim 1s linear infinite alternate;
-    -moz-animation: jy-logo-anim 1s linear infinite alternate;
-    animation: jy-logo-anim 1s linear infinite alternate;
+	// -webkit-animation: jy-logo-anim 1s linear infinite alternate;
+ //    -moz-animation: jy-logo-anim 1s linear infinite alternate;
+ //    animation: jy-logo-anim 1s linear infinite alternate;
 }
 
-.jy-logo-path {
+#jy-logo-path {
 	stroke: #fff;
-	transform-origin: 50% 50%;
-	stroke-width: 10;
-	-webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+	stroke-width: 5;
+ //    -webkit-animation: DropShadowOut 1s ease-in infinite alternate;
+ //    -moz-animation: DropShadowOut 1s ease-in infinite alternate;
+	// animation: DropShadowOut 1s 1 alternate ease-in forwards;
 }
 
-.jy-logo-path:hover {
-    -webkit-animation: none;
-    -moz-animation: none;
-	animation: none;
+#jy-logo-svg:hover {
+    -webkit-animation: jy-logo-anim 1s ease-in infinite alternate;
+    -moz-animation: jy-logo-anim 1s ease-in infinite alternate;
+	animation: jy-logo-anim 1s 1 alternate ease-out infinite;
 }
 
 @-webkit-keyframes jy-logo-anim {
-  from {-webkit-filter: drop-shadow(0 0 30px #298fb7);}
-  to {-webkit-filter: drop-shadow(0 0 30px #004763);}
+  0% {-webkit-filter: drop-shadow(0 0 0 #000);}
+  100% {-webkit-filter: drop-shadow(0 0 30px #298fb7);}
 }
 
 @-moz-keyframes jy-logo-anim {
-  from {-moz-filter: drop-shadow(30 30 30px #298fb7);}
-  to {-moz-filter: drop-shadow(0 30 30px #004763);}
+  from {-moz-filter: drop-shadow(0 0 0 #000);}
+  to {-moz-filter: drop-shadow(0 10 10px #298fb7);}
 }
 
 @keyframes jy-logo-anim {
-  from {filter: drop-shadow(0 0 10px #298fb7);}
-  to {filter: drop-shadow(0 0 10px #fff);}
+  from {filter: drop-shadow(0 0 0 #fff);
+  }
+  to {filter: drop-shadow(0 0 10px #298fb7);
+  }
 }
+
+// @keyframes DropShadowOut {
+//   100% {filter: drop-shadow(0 0 10px #fff);}
+//   0% {filter: drop-shadow(0 0 10px #298fb7);}
+// }
 
 .section2 {
 	height: 600px;
@@ -203,11 +210,6 @@ section {
 	font-size: 1em;
 	text-align: center;
 	vertical-align: middle;
-}
-
-#section1 {
-	background-color: black;
-	height: 100%;
 }
 
 .skills-list {
@@ -468,21 +470,11 @@ footer {
     	font-size: 0.75em;
     }
 
-    .jy-logo-container {
-
-	}
-    .jy-ufo-div {
-		//left: 170px;
-	}
-
-    #jy-logo-svg {
-		// top: 10px;
-		// left: 575px;
-		width: 200px;
-	}
-
 	#jy-ufo-svg {
-		height: 200px;
+		height: 45%;
+	}
+    #jy-logo-svg {
+		width: 45%;
 	}
 
     #section-div-jared{
