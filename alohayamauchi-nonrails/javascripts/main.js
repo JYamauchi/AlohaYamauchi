@@ -63,11 +63,9 @@ $(document).ready(function () {
   // $(".jy-ufo-div")
   //   .velocity("fadeIn", { duration: 3500 });
 
-  $(".jy-ufo-path")
-    .delay(2000)
-    .velocity({ strokeRed: 255, strokeGreen: 255, strokeBlue: 255, opacity: 1, strokeWidth: 2 })
-    .delay(2000)
-    .velocity({ fillRed: 255, fillGreen: 255, fillBlue: 255, opacity: 1}, {duration: 1000});
+  // $("#jy-logo-svg", ".jy-logo-path")
+  //   .delay(2000)
+  //   .velocity({ fillRed: 255, fillGreen: 255, fillBlue: 255, opacity: 1}, {duration: 1000});
   
   // ufoSpinPath
   //   .delay(1000)
@@ -79,8 +77,9 @@ $(document).ready(function () {
   var doubleRings = $("#jy-double-rings-svg")[0];
   var outerRing = $("#jy-outer-ring-svg")[0];
   var innerRing = $("#jy-inner-ring-svg")[0];
+  var logoPaths = $(".jy-logo-path", ".jy-inner-ring", ".jy-outer-ring", ".jy-double-rings")[0];
 
-  TweenMax.to(doubleRings, .3, {glowFilter:{color:0xffffff, alpha:1, blurX:30, blurY:30}, paused:true});
+  //TweenMax.to(doubleRings, .3, {glowFilter:{color:0xffffff, alpha:1, blurX:30, blurY:30}, paused:true});
 
   TweenMax.to([logoSVG, doubleRings, ufoSVG, outerRing, innerRing], 0, {
     transformOrigin: "50% 50%"
@@ -115,7 +114,7 @@ $(document).ready(function () {
         isPlaying = true;
         rotateCD.play(); rotateCD2.play();
         TweenMax.to([rotateCD, rotateCD2], 2, { timeScale: 1 });
-        //ufoSpinPath.velocity({ scale: 1, fillRed: 255, fillGreen: 255, fillBlue:255, opacity: 1});
+        // $("#jy-logo-svg", ".jy-logo-path").velocity({ scale: 1, fillRed: 255, fillGreen: 255, fillBlue:255, opacity: 1});
     }
 
     function toggleOff() {
