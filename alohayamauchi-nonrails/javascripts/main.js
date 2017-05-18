@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
   //For Navigation Menu
   var nav = $('header');
